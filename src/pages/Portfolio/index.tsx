@@ -64,18 +64,16 @@ export default function Portfolio() {
                 </section>
 
                 <section>
-                    <h2>Blogs and Stack Overflow</h2>
+                    <h2>Stack Overflow</h2>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Aut, provident fugit voluptatum suscipit
-                        repudiandae et pariatur iusto unde delectus? Facere
-                        rerum maxime ad impedit reiciendis incidunt illum
-                        assumenda nostrum deleniti.
+                        Since I started programming, I have participated in Stack Overflow,
+                        both for asking and answering questions. My current repuation score is
+                        <strong> ~6,600 with 484,000 people reached</strong>.
                     </p>
 
-                    <Link to="open-source">
-                        <button>View</button>
-                    </Link>
+                    <a href="https://stackoverflow.com/users/12464931/elitezen" target="_blank">
+                        <button>View Profile</button>
+                    </a>
                 </section>
             </main>
         </>

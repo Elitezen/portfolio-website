@@ -109,6 +109,10 @@ function Home() {
                             <button>View My Work</button>
                         </a>
 
+                        <a href="https://github.com/Elitezen" target="_blank">
+                            <button>View My GitHub</button>
+                        </a>
+
                         <a href="/contact-me">
                             <button>Contact Me</button>
                         </a>
