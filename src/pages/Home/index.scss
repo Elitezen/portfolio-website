@@ -1,0 +1,148 @@
+@use "sass:map";
+@import '../../main.scss';
+
+section {
+    margin: 15em 0;
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        max-width: 60ch;
+        margin: 3em auto;
+        font-size: 1.25rem;
+        line-height: 1.4em;
+    }
+}
+
+header {
+    padding: 0 2em;
+    text-align: center;
+
+    h1, h2 {
+        font-weight: 300;
+        margin: 0.5em 0;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 5rem;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        max-width: 60ch;
+        color: rgb(171, 171, 171);
+        margin: auto;
+
+        strong {
+            color: #FFF;
+        }
+    }
+}
+
+.image-and-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+
+    .image-and-text-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+        margin: 5em auto;
+        padding: 0 3em;
+        max-width: 1200px;
+
+        figure, p {
+            margin: 0 1em;
+        }
+
+        p {
+            height: fit-content;
+            width: 50%;
+            text-wrap: wrap;
+        }
+
+        figure {
+            width: 50%;
+            img {
+                width: clamp(250px, 90%, 400px);
+            }
+        }
+    }
+}
+
+#header-buttons {
+    margin: 4em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        display: block;
+        margin: 0 1em;
+
+        button {
+            font-size: 1.2rem;
+            padding: 0.75em 1.5em;
+            color: #FFF;
+            background-color: map.get($theme-colors, "slate-blue");
+            border: none;
+            border-radius: 2px;
+            transition: 0.15s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                background-color: transparent;
+
+            }
+        }
+    }
+}
+
+#skills {
+    padding: 0em 0;
+    margin: 4em 0;
+
+    h3 {
+        text-align: center;
+        margin: 0.5em 0;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 75%;
+        padding: 2em 0;
+        list-style: none;
+
+        li {
+            margin-bottom: 3.5em;
+
+            figure {
+                max-width: 100px;
+                margin-right: 2.5em;
+
+                img {
+                    aspect-ratio: 1/1;
+                    width: 100%;
+                }
+
+                figcaption {
+                    text-align: center;
+                    margin-top: 0.75em;
+                }
+            }
+        }
+    }
+}

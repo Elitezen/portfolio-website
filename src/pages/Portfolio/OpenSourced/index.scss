@@ -1,0 +1,13 @@
+@import '../../../main.scss';
+
+header {
+    @media screen and (max-width: $mobile-break-point) {
+        h1 {
+            font-size: 4rem;
+        }
+    
+        h2 {
+            text-align: center !important;
+        }
+    }
+}

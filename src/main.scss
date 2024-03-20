@@ -1,0 +1,122 @@
+@use "sass:map";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+$base-font-size: 1rem;
+$font-family-default: "Lato", sans-serif;
+$SIDE-NAV-SIZE: 5.5em;
+$mobile-break-point: 1000px;
+$theme-colors: (
+    gun-metal: #293132,
+    jet: #474044,
+    davys-gray: #4F5165,
+    glaucous: #547AA5,
+    robin-egg-blue: #50D8D7,
+    slate-blue: #5a45e2
+);
+
+@function font-size-golden-ratio($n) {
+    @return $base-font-size * pow(1.618, $n);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: $font-family-default;
+}
+
+html {
+    font-size: 1em;
+}
+
+main {
+    padding: 1em;
+    margin-left: $SIDE-NAV-SIZE;
+    color: #FFF;
+    background-color: map.get($theme-colors, "gun-metal");
+    overflow-x: hidden;
+
+    @media screen and (max-width: $mobile-break-point) {
+        margin-left: 0;
+        padding: 0 2em;
+    }
+}
+
+a {
+    color: lighten(map.get($theme-colors, "slate-blue"), 10%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #FFF;
+}
+
+h1 {
+    font-size: font-size-golden-ratio(3);
+}
+
+h2 {
+    font-size: font-size-golden-ratio(2);
+}
+
+h3 {
+    font-size: font-size-golden-ratio(1);
+}
+
+p {
+    font-size: $base-font-size;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.page-heading p {
+    margin-top: 0.75em;
+}
+
+.sub-section {
+    margin: 15em 4em;
+    text-align: center;
+
+    h2, p {
+        text-align: left;
+    }
+}
+
+.image-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10em 0;
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5em;
+
+        img {
+            max-height: 700px;
+            max-width: 80vw;
+            width: auto;
+            border-radius: 5px;
+            
+        }
+
+        figcaption {
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: 300;
+            
+            p {
+                max-width: 45ch;
+            }
+        }
+
+        &.glow {
+            box-shadow: 0 0px 15px map.get($theme-colors, "robin-egg-blue");
+        }
+    }
+}
