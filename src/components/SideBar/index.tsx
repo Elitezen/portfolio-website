@@ -1,23 +1,23 @@
-import styles from './index.module.scss';
-import SideBarLink from '../SideBarLink'
+import styles from "./index.module.scss";
+import SideBarLink from "../SideBarLink";
 
-import houseSVG from '../../assets/icons/house-fill.svg';
-import personWorkspaceSVG from '../../assets/icons/person-workspace.svg';
+import houseSVG from "../../assets/icons/house-fill.svg";
+import personWorkspaceSVG from "../../assets/icons/person-workspace.svg";
 // import envelopeSVG from '../../assets/icons/envelope-at.svg'
 
-import type { SideBarLinkOptions } from '../../types';
+import type { SideBarLinkOptions } from "../../types";
 
-const links:SideBarLinkOptions[] = [
+const links: SideBarLinkOptions[] = [
     {
         iconPath: houseSVG,
-        path: '/',
-        tooltip: 'home'
+        path: "/",
+        tooltip: "home"
     },
     {
         iconPath: personWorkspaceSVG,
-        path: '/portfolio',
-        tooltip: 'portfolio'
-    },
+        path: "/portfolio",
+        tooltip: "portfolio"
+    }
     // {
     //     iconPath: envelopeSVG,
     //     path: '/contact',
@@ -31,14 +31,12 @@ export default function SideBar() {
             <div className={styles.container}>
                 <nav>
                     <ul>
-                        {
-                            links.map((link, i) => (
-                                <SideBarLink key={i} {...link} />
-                            ))
-                        }
+                        {links.map((link, i) => (
+                            <SideBarLink key={i} {...link} />
+                        ))}
                     </ul>
                 </nav>
             </div>
         </div>
-    )
+    );
 }

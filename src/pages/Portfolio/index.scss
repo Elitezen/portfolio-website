@@ -1,5 +1,5 @@
 @use "sass:map";
-@import '../../main.scss';
+@import "../../main.scss";
 
 main {
     h1 {
@@ -15,7 +15,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     a {
         text-decoration: none;
 
@@ -23,12 +23,12 @@ section {
             display: block;
             padding: 1em 2em;
             font-size: 1.05rem;
-            color: #FFF;
+            color: #fff;
             background-color: map.get($theme-colors, "slate-blue");
             transition: 0.125s ease-in-out;
             border: none;
             border-radius: 2px;
-            
+
             &:hover {
                 cursor: pointer;
                 background-color: transparent;
