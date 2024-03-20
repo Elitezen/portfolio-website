@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         path: "portfolio/open-source",
         element: <OpenSourced />
     }
-]);
+], { basename: '/portfolio-website/' });
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <React.StrictMode>
