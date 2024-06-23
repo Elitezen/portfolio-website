@@ -1,5 +1,18 @@
-import "./index.scss";
+import './index.scss';
 import SideBar from "../../../components/SideBar";
+
+import StackOverflowPortfolio from "../../../assets/images/stackoverflow-profile.png"
+
+import GitOpenTriviaDb from "../../../assets/images/git_open-trivia-db.png";
+import GitDiscordjsChatGpt from "../../../assets/images/git_discordjs-chatgpt.png";
+import GitDiscordTrivia from "../../../assets/images/git_discord-trivia.png";
+
+import GitNodeSDK from "../../../assets/images/git_node-sdk.webp";
+import GitTextOnGif from "../../../assets/images/git_text-on-gif.webp";
+import GitStopDiscordPhising from "../../../assets/images/git_stop-discord-phising.webp";
+import { Link } from 'react-router-dom';
+import ScrollToTop from '../../../components/ScrollToTop';
+import redirect from '../../../util/redirect';
 
 export default function OpenSourced() {
     return (
@@ -7,54 +20,113 @@ export default function OpenSourced() {
             <SideBar />
             <main>
                 <header>
-                    <h1>Open Sourced Contributions</h1>
+                    <h1>Open Sourced Work</h1>
                     <h2>
-                        Below are my contributions to other NodeJS projects, NPM
-                        libraries,
+                        Below are my NodeJS projects, NPM libraries, and contributions to others.
                     </h2>
                 </header>
 
                 <section className="sub-section">
-                    <h3>open-trivia-db</h3>
+                   <h3><a href="https://stackoverflow.com/users/12464931/elitezen" target="_blank">Stack Overflow</a></h3>
 
-                    <p>
-                        open-trivia-db is an API wrapper for{" "}
-                        <a href="">Open Trivia Database</a>
-                    </p>
+                    <figure>
+                        <img 
+                            src={StackOverflowPortfolio} 
+                            alt="Screen Shot of scriptlystudios.com"
+                            className='clickable-image'
+                            onClick={() => redirect('https://stackoverflow.com/users/12464931/elitezen')}
+                            style={{ width: '70vw' }} />
+                        
+                        <figcaption>
+                            <p>
+                                I've been answering various Node.JS questions for the past 4 years.
+                            </p>
+                        </figcaption>
+                    </figure>
                 </section>
 
-                <section className="sub-section">
-                    <h3>discord-trivia</h3>
+                <section>
+                    <h2>Created Projects</h2>
 
-                    <p>
-                        discord-trivia, a superset of open-trivia-db, is a{" "}
-                        <a href="">Discord.JS</a> based SDK for developing
-                        complex trivia game systems into Discord Apps
-                    </p>
+                    <section className='sub-section'>
+                        <figure>
+                            <img 
+                                src={GitOpenTriviaDb} 
+                                alt="Github Open Trivia DB display"
+                                className='clickable-image'
+                                onClick={() => redirect('https://github.com/Elitezen/open-trivia-db-wrapper')} />
+                            <figcaption>An API wrapper for OpenTDB with over 50 dependants on GitHub</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img 
+                                src={GitDiscordjsChatGpt} 
+                                alt="Github Discord.JS Chat GPT display"
+                                className='clickable-image'
+                                onClick={() => redirect('https://github.com/Elitezen/discordjs-chatgpt')} />
+                            <figcaption>A Discord.JS based plugin for integrating ChatGPT into Discord clients</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img 
+                                src={GitDiscordTrivia} 
+                                alt="Github Discord Trivia display"
+                                className='clickable-image'
+                                onClick={() => redirect('https://github.com/Elitezen/discord-trivia')} />
+                            <figcaption>A Discord.JS based library/plugin for creating and managing fully-fledged trivia.</figcaption>
+                        </figure>
+                    </section>
                 </section>
 
-                <section className="sub-section">
-                    <h3>text-to-gif v3</h3>
+                <section>
+                    <h2>Contributions</h2>
 
-                    <p>
-                        text-to-gif is an open-sourced library for creating gifs
-                        with text applied in NodeJS. I singlehandedly designed
-                        and developed the v3 major version update for the
-                        library, along with providing typings which were missing
-                        in v2.
-                    </p>
-                </section>
+                    <section className='sub-section'>
+                        <figure>
+                            <img 
+                                src={GitTextOnGif} 
+                                alt="Github text on gif repository display"
+                                className='clickable-image'
+                                onClick={() => redirect('https://github.com/Elitezen/text-on-gif')} />
 
-                <section className="sub-section">
-                    <h3>Provided typings for stop-discord-phishing</h3>
+                            <figcaption>
+                                Reworked majority of the module with quality of life improvements, converted to TypeScript, and complete typings.
+                            </figcaption>
+                        </figure>
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Deserunt quae libero et voluptatum ex neque iure
-                        provident, possimus impedit facere.
-                    </p>
+                        <figure>
+                            <img 
+                                src={GitNodeSDK} 
+                                alt="Github top.gg node sdk repository display"
+                                className='clickable-image'
+                                onClick={() => redirect('https://github.com/Elitezen/node-sdk')} />
+
+                            <figcaption>
+                                Contributed improved typings and JSDOC descriptions
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img 
+                                src={GitStopDiscordPhising} 
+                                alt="Github stop discord phising repository display"
+                                className='clickable-image'
+                                onClick={() => redirect('https://github.com/Elitezen/stop-discord-phishing')} />
+
+                            <figcaption>
+                                Added typings to the enitre module
+                            </figcaption>
+                        </figure>
+                    </section>
+
+                    <h2>View My Programming Articles</h2>
+                    <Link to="../portfolio/extras" onClick={ScrollToTop}>
+                        <button style={{ margin: '2.5em 0' }}>
+                            View Blogs
+                        </button>
+                    </Link>
                 </section>
             </main>
         </>
-    );
+    )
 }

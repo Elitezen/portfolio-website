@@ -1,8 +1,13 @@
-import "./index.scss";
+import './index.scss';
 import SideBar from "../../../components/SideBar";
 
 import ExpressiaAppDirectory from "../../../assets/images/expressia-app-directory.png";
-import ExpressiaBotCom from "../../../assets/images/expressia-bot-com.png";
+import ExpressiaBotCom from '../../../assets/images/expressia-bot-com.png';
+import Showcase1 from "../../../assets/images/expressia_showcase_1.png";
+import Showcase2 from "../../../assets/images/expressia_showcase_2.png";
+import Showcase3 from "../../../assets/images/expressia_showcase_3.png";
+import { Link } from 'react-router-dom';
+import ScrollToTop from '../../../components/ScrollToTop';
 
 export default function Expressia() {
     return (
@@ -12,8 +17,7 @@ export default function Expressia() {
                 <header>
                     <h1>Expressia Discord App</h1>
                     <h2>
-                        Expressia includes an Express API, NodeJS client, and
-                        React SPA website.
+                        Expressia includes an Express API, NodeJS client, and React SPA website.
                     </h2>
                 </header>
 
@@ -21,26 +25,16 @@ export default function Expressia() {
                     <h3>Expressia App Client</h3>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Natus similique quidem quia, temporibus fuga veritatis
-                        earum ut sit officia odio beatae nulla distinctio
-                        deleniti, minima voluptate perferendis quod? Corrupti,
-                        nihil.
+                        Expressia is a public Discord bot in +500 servers totaling ~100,000 users total.
                     </p>
 
                     <div className="image-row">
                         <figure>
-                            <img
-                                src={ExpressiaAppDirectory}
-                                alt="Expressia page on Discord's app directory"
-                                style={{ maxWidth: "70vw" }}
-                            />
-
+                            <img src={ExpressiaAppDirectory} alt="Expressia page on Discord's app directory" 
+                            style={{ maxWidth: '70vw' }}/>
+                            
                             <figcaption>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Reprehenderit, molestias.
-                                </p>
+                                Expressia's official <a href="" target="_blank">Discord App Directory Page</a>
                             </figcaption>
                         </figure>
                     </div>
@@ -48,37 +42,39 @@ export default function Expressia() {
 
                 <section className="sub-section">
                     <h3>
-                        <a href="https://expressiabot.com" target="_blank">
+                        <a href="https://expressiabot.com" target='_blank'>
                             Expressiabot.com
                         </a>
                     </h3>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Natus similique quidem quia, temporibus fuga veritatis
-                        earum ut sit officia odio beatae nulla distinctio
-                        deleniti, minima voluptate perferendis quod? Corrupti,
-                        nihil.
+                        A React Single Page Application for showcasing Expressia's capabilities.
                     </p>
 
                     <div className="image-row">
                         <figure>
-                            <img
-                                src={ExpressiaBotCom}
-                                alt="Screen shot of Expressiabot.com"
-                                style={{ maxWidth: "70vw" }}
-                            />
+                            <img src={ExpressiaBotCom} alt="Screen shot of Expressiabot.com" 
+                            style={{ maxWidth: '70vw' }}/>
 
-                            <figcaption>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Reprehenderit, molestias.
-                                </p>
-                            </figcaption>
+                            <img src={Showcase1} alt="Expressia showcase image" 
+                            style={{ maxWidth: '50vw', margin: '1em 0' }}/>
+
+                            <img src={Showcase2} alt="Expressia showcase image" 
+                            style={{ maxWidth: '50vw', margin: '1em 0' }}/>
+
+                            <img src={Showcase3} alt="Expressia showcase image" 
+                            style={{ maxWidth: '50vw', margin: '1em 0' }}/>
                         </figure>
                     </div>
+
+                    <h2>View My Contributions To Open Source</h2>
+                    <Link to="../portfolio/open-source" onClick={ScrollToTop}>
+                        <button style={{ margin: '2.5em 0' }}>
+                            View Open-Sourced Work
+                        </button>
+                    </Link>
                 </section>
             </main>
         </>
-    );
+    )
 }

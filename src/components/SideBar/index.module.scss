@@ -1,5 +1,5 @@
 @use "sass:map";
-@import "../../main.scss";
+@import '../../main.scss';
 
 #sidebar {
     background-color: map.get($theme-colors, "jet");
@@ -13,7 +13,7 @@
 
     display: flex;
     flex-direction: column;
-
+    
     .container {
         height: 95vh;
         margin: auto 0;
@@ -70,7 +70,7 @@ nav {
                 }
 
                 figcaption {
-                    color: #fff;
+                    color: #FFF;
                     margin-top: 8px;
                     text-align: center;
                     font-size: 0.85rem;

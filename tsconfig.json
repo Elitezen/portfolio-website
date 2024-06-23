@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "Expressia.tsx", "src/main.tsx"],
+  "include": ["src", "Expressia.tsx", "src/main.tsx", "dist/assets"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -1,13 +1,27 @@
-@import "../../../main.scss";
+@import '../../../main.scss';
 
 header {
     @media screen and (max-width: $mobile-break-point) {
         h1 {
             font-size: 4rem;
         }
-
+    
         h2 {
             text-align: center !important;
         }
+    }
+}
+
+.sub-section figure {
+    margin: 3em 0;
+
+    img {
+        width: clamp(400px, 50vw, 800px);
+    }
+
+    figcaption {
+        max-width: 40ch;
+        margin: 1em auto;
+        font-size: 1.2em;
     }
 }

@@ -1,5 +1,5 @@
 @use "sass:map";
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 $base-font-size: 1rem;
 $font-family-default: "Lato", sans-serif;
@@ -8,9 +8,9 @@ $mobile-break-point: 1000px;
 $theme-colors: (
     gun-metal: #293132,
     jet: #474044,
-    davys-gray: #4f5165,
-    glaucous: #547aa5,
-    robin-egg-blue: #50d8d7,
+    davys-gray: #4F5165,
+    glaucous: #547AA5,
+    robin-egg-blue: #50D8D7,
     slate-blue: #5a45e2
 );
 
@@ -33,7 +33,7 @@ html {
 main {
     padding: 1em;
     margin-left: $SIDE-NAV-SIZE;
-    color: #fff;
+    color: #FFF;
     background-color: map.get($theme-colors, "gun-metal");
     overflow-x: hidden;
 
@@ -47,13 +47,8 @@ a {
     color: lighten(map.get($theme-colors, "slate-blue"), 10%);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #fff;
+h1, h2, h3, h4, h5, h6 {
+    color: #FFF;
 }
 
 h1 {
@@ -82,8 +77,7 @@ p {
     margin: 15em 4em;
     text-align: center;
 
-    h2,
-    p {
+    h2, p {
         text-align: left;
     }
 }
@@ -108,13 +102,14 @@ p {
             max-width: 80vw;
             width: auto;
             border-radius: 5px;
+            
         }
 
         figcaption {
             text-align: center;
             font-size: 0.9rem;
             font-weight: 300;
-
+            
             p {
                 max-width: 45ch;
             }
@@ -124,4 +119,10 @@ p {
             box-shadow: 0 0px 15px map.get($theme-colors, "robin-egg-blue");
         }
     }
+}
+
+.clickable-image:hover {
+    cursor: pointer;
+    transition: ease-in-out 0.15s;
+    transform: scale(1.05);
 }
