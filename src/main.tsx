@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 
@@ -14,7 +14,7 @@ import Expressia from './pages/Portfolio/Expressia';
 import OpenSourced from './pages/Portfolio/OpenSourced';
 import Extras from './pages/Portfolio/Extras';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   	{
     	path: "/",
     	element: <Home />
