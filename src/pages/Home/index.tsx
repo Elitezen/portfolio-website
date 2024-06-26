@@ -120,7 +120,7 @@ function Home() {
 							</button>
 						</a>
 
-						<a href="/contact-me">
+						<a href="/contact">
 							<button>
 								Contact Me
 							</button>
