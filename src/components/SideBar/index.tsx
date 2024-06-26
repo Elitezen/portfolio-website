@@ -3,7 +3,7 @@ import SideBarLink from '../SideBarLink'
 
 import houseSVG from '../../assets/icons/house-fill.svg';
 import personWorkspaceSVG from '../../assets/icons/person-workspace.svg';
-// import envelopeSVG from '../../assets/icons/envelope-at.svg'
+import envelopeSVG from '../../assets/icons/envelope-at.svg'
 
 import type { SideBarLinkOptions } from '../../types';
 
@@ -18,11 +18,11 @@ const links:SideBarLinkOptions[] = [
         path: '/portfolio',
         tooltip: 'portfolio'
     },
-    // {
-    //     iconPath: envelopeSVG,
-    //     path: '/contact',
-    //     tooltip: 'contact'
-    // }
+    {
+        iconPath: envelopeSVG,
+        path: '/contact',
+        tooltip: 'contact'
+    }
 ];
 
 export default function SideBar() {

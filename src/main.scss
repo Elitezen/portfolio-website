@@ -30,6 +30,10 @@ html {
     font-size: 1em;
 }
 
+body {
+    background-color: map.get($theme-colors, "gun-metal");
+}
+
 main {
     padding: 1em;
     margin-left: $SIDE-NAV-SIZE;

@@ -72,8 +72,27 @@ header {
 
         figure {
             width: 50%;
+
             img {
                 width: clamp(250px, 90%, 400px);
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            
+            figure {
+                width: 100%;
+                margin: 0 0 3em 0;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            p {
+                width: 95%;
+                font-size: 1.1rem;
             }
         }
     }
@@ -91,7 +110,8 @@ header {
 
         button {
             font-size: 1.2rem;
-            padding: 0.75em 1.5em;
+            width: 10.5em;
+            height: 2.5em;
             color: #FFF;
             background-color: map.get($theme-colors, "slate-blue");
             border: none;
@@ -102,6 +122,21 @@ header {
                 cursor: pointer;
                 background-color: transparent;
 
+            }
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+
+
+        a {
+            margin: 0.5em 0;
+            
+            button {
+                width: 12.5em;
+                height: 3em;
+                padding: 0;
             }
         }
     }
@@ -141,6 +176,21 @@ header {
                 figcaption {
                     text-align: center;
                     margin-top: 0.75em;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        ul {
+            width: 100%;
+
+            li {
+                // background-color: rebeccapurple;
+                
+                figure {
+                    max-width: 85px;
+                    margin: 0 1em;
                 }
             }
         }

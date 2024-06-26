@@ -13,6 +13,7 @@ import ScriptlyStudios from './pages/Portfolio/ScriptlyStudios';
 import Expressia from './pages/Portfolio/Expressia';
 import OpenSourced from './pages/Portfolio/OpenSourced';
 import Extras from './pages/Portfolio/Extras';
+import Contact from './pages/Contact';
 
 const router = createBrowserRouter([
   	{
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
 	{
 		path: 'portfolio/extras',
 		element: <Extras />
+	},
+	{
+		path: '/contact',
+		element: <Contact />
 	}
 ], {
 	basename: '/'
