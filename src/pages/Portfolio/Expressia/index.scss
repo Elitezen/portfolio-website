@@ -7,3 +7,17 @@ main {
         }
     }
 }
+
+@media screen and (max-width: $mobile-break-point) {
+    .image-row {
+        width: 100%;
+        padding: 0 !important;
+
+        figure {
+            width: 100%;
+            img {
+                width: 900px !important;
+            }
+        }
+    }
+ }

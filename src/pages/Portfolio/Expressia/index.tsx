@@ -67,13 +67,15 @@ export default function Expressia() {
                         </figure>
                     </div>
 
-                    <h2>View My Contributions To Open Source</h2>
-                    
-                    <Link to="../portfolio/open-source" onClick={ScrollToTop}>
-                        <button style={{ margin: '2.5em 0' }}>
-                            View Open-Sourced Work
-                        </button>
-                    </Link>
+                    <section>
+                        <h3>View Open-Sourced Work</h3>
+
+                        <Link to="../portfolio/open-source" onClick={ScrollToTop}>
+                            <button style={{ margin: '2.5em 0' }}>
+                                View Expressia
+                            </button>
+                        </Link>
+                    </section>
                 </section>
             </main>
         </>

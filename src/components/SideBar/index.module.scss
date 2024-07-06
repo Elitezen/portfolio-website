@@ -76,6 +76,12 @@ nav {
                     font-size: 0.85rem;
                     font-weight: 300;
                 }
+
+                @media screen and (max-width: $mobile-break-point) {
+                    img {
+                        width: clamp(1.9em, 4vw, 3em) !important;
+                    }
+                }
             }
         }
 

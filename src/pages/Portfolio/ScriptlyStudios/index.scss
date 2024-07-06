@@ -8,3 +8,23 @@ figure #iframe {
     width: 50vw;
     height: auto;
 }
+
+@media screen and (max-width: $mobile-break-point) {
+    header {
+        padding: 3em 0;
+        
+        h1 {
+            font-size: 1.5rem !important;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.2rem !important;
+        }
+    }
+
+    section {
+        margin: 4em auto !important;
+        width: 100%;
+    }
+}

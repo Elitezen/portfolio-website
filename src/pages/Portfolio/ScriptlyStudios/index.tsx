@@ -96,7 +96,7 @@ export default function ScriptlyStudios() {
                 </section>
 
                 <section>
-                    <h3>View My Personal Discord Client Expressia</h3>
+                    <h3>View Expressia</h3>
 
                     <Link to="../portfolio/expressia" onClick={ScrollToTop}>
                         <button style={{ margin: '2.5em 0' }}>
