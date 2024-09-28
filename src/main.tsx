@@ -14,6 +14,8 @@ import Expressia from './pages/Portfolio/Expressia';
 import OpenSourced from './pages/Portfolio/OpenSourced';
 import Extras from './pages/Portfolio/Extras';
 import Contact from './pages/Contact';
+import HirakanaTOS from './pages/HirakanaTOS';
+import HirakanaPP from './pages/HirakanaPP';
 
 const router = createBrowserRouter([
   	{
@@ -43,6 +45,14 @@ const router = createBrowserRouter([
 	{
 		path: '/contact',
 		element: <Contact />
+	},
+	{
+		path: 'hirakana/terms-of-service',
+		element: <HirakanaTOS />
+	},
+	{
+		path: 'hirakana/privacy-policy',
+		element: <HirakanaPP />
 	}
 ], {
 	basename: '/'
