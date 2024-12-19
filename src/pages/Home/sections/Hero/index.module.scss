@@ -1,0 +1,56 @@
+@use "../../../../styles/functions";
+
+.hero {
+    .content {
+        color: functions.color("foreground");
+        background-color: transparent;
+        padding: 4em 8em;
+
+        span.strongGlow {
+            text-shadow: 0 0 5px #fff,     // Core glow
+                        0 0 10px #fff,    // Medium glow
+                        0 0 13px #5d5d5d; // Outer glow 3
+        }
+
+        span.softGlow {
+            text-shadow: 0 0 5px #fff,     // Core glow
+                0 0 3px #fff,    // Medium glow
+        }
+
+        .heading {
+            line-height: 1.2;
+            h1 {
+                font-size: functions.font-size("hero");
+            }
+
+            h2 {
+                color: functions.color("primary");
+                font-size: functions.font-size("lg") + 0.5rem;
+            }
+
+            h3 {
+                font-size: functions.font-size("lg")  + 1.2rem;
+                opacity: 1;
+            }
+        }
+
+        .descriptionWrapper {
+            margin: 2em 0;
+
+            p {
+                font-size: functions.font-size("lg") + 0.5rem;
+                font-weight: 500;
+                max-width: 55ch;
+
+                span {
+                    font-weight: bolder;
+                }
+            }
+
+            .footer {
+                font-size: functions.font-size("base") + 0.3rem;
+                margin-top: 6em;
+            }
+        }
+    }
+}

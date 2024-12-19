@@ -1,0 +1,12 @@
+@use "../../../../styles/mixins";
+@use "../../../../styles/functions";
+
+.myWork {
+    @include mixins.inner-page();
+
+    .content {
+        h1 {
+            font-size: functions.font-size("xl");
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@use "../../../../../../styles/mixins";
+
+.highlightedProjects {
+    .projectCards {
+        @include mixins.flex(column, center, space-between);
+    }
+}

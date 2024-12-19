@@ -1,0 +1,20 @@
+Font Choice:
+    Hero:
+    Text: Quicksand
+
+- Contrasting Colors
+- Animated Text
+- Animated Slides
+- Pop out elements
+- Animated Button Hovers
+- Organized footer links with icons
+- Custom Image outlines
+- Multi-Width project images
+- Each project has its own page
+    - Each page lists technologies
+- Subheadings on top
+- Section with lists of services
+- Testimonials Section
+- Contact form Section
+<a href="https://iconscout.com/illustrations/working-with-laptop" class="text-underline font-size-sm" target="_blank">Working With Laptop</a> by <a href="https://iconscout.com/contributors/manypixels-gallery" class="text-underline font-size-sm" target="_blank">Manypixels Gallery</a>
+Read.cv

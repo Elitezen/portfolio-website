@@ -1,0 +1,10 @@
+@use "sass:map";
+@use "./variables";
+
+@function font-size($val) {
+    @return map.get(variables.$font-sizes, $val);
+}
+
+@function color($col) {
+    @return map.get(variables.$colors, $col);
+}

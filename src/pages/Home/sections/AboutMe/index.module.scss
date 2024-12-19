@@ -1,0 +1,8 @@
+@use "../../../../styles/mixins";
+
+.aboutMe {
+    @include mixins.inner-page();
+    background-color: lightcoral;
+    position: absolute;
+    top: 0;
+}

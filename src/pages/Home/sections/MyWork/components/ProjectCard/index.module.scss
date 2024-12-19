@@ -1,0 +1,40 @@
+@use "../../../../../../styles/mixins";
+@use "../../../../../../styles/functions";
+
+.projectCard {
+    margin: 2em 0;
+    background-color: #000;
+    border: 1px solid #7a7a7a;
+
+    .content {
+        @include mixins.flex(row, flex-start, space-between);
+        gap: 2em;
+        padding: 1em;
+
+        .imageSide, .textSide {
+            flex: 1;
+        }
+
+        .imageSide {
+            img {
+                width: 100%;
+                border-radius: 3px;
+            }
+        }
+
+        .textSide {
+            h1 {
+
+            }
+            
+            h2 {
+                font-size: functions.font-size("sm");
+                color: functions.color("primary");
+            }
+
+            p {
+                margin-top: 1em;
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@use "../../../../styles/mixins";
+@use "../../../../styles/functions";
+
+.workAndAboutMe {
+    position: relative;
+    background-color: rgb(46, 46, 46);
+
+    .content {
+        padding: 1em 3em;
+
+        .containerHeader {
+            @include mixins.flex();
+            padding: 5em;
+
+            nav {
+                position: relative; // Ensure the moving square is positioned relative to the nav container
+            
+                ul {
+                    position: relative;
+                    display: flex;
+                    list-style: none;
+                    width: fit-content;
+                    border: 2px solid #FFF;
+            
+                    li {
+                        @include mixins.flex();
+                        flex: 1;
+            
+                        button {
+                            padding: 1em 2em;
+                            color: #FFF;
+                            background-color: transparent;
+                            border: none;
+                            font-size: functions.font-size("base") + 0.15rem;
+                            position: relative; // Ensure button content stays in place
+                            white-space: nowrap;
+
+                            &.selected {
+                                color: #000;
+                            }
+            
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+            
+                        &:nth-child(1) {
+                            border-right: 2px solid #FFF;
+                        }
+                    }
+            
+                    .movingSquare {
+                        position: absolute;
+                        bottom: 0; // Place it at the bottom of the nav bar
+                        left: 0; // Initially place it at the start of the nav
+                        width: 50%; // Adjust width to match the button's size
+                        height: 100%; // Height of the square
+                        background-color: #FFF;
+                        transition: transform 0.3s ease; // Smooth animation
+                    }
+                }
+            }
+        }
+
+        .innerPageWrapper {
+            position: relative;
+            margin: 3em 0;
+        }
+    }
+}

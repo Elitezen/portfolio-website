@@ -1,0 +1,42 @@
+@use "./styles/functions";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root {
+    line-height: 1.4;
+    font-family: "Inter", serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    font-size: 1rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    overflow-x: hidden;
+    background-color: #000;
+}
+
+body {
+    color: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: "Rajdhani", serif;
+    text-transform: uppercase;
+}
+
+p, h4, h5, h6 {
+    font-family: "Inter", serif;
+}
+
+a {
+    text-decoration: none;
+}

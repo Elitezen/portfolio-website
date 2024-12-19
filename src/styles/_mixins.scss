@@ -1,0 +1,17 @@
+@mixin flex($dir: row, $align: center, $justify: center) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin square-element($size) {
+    aspect-ratio: 1 /1;
+    width: $size;
+    height: $size;
+}
+
+@mixin inner-page() {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}

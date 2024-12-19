@@ -1,0 +1,65 @@
+@use "../../styles/mixins.scss";
+@use "../../styles/functions";
+
+header {
+    position: sticky;
+    top: 0;
+
+    .content {
+        @include mixins.flex(row, center, space-between);
+        transition: background-color 0.5s ease-in-out;
+        background-color: rgba(0, 0, 0, 0);
+        color: functions.color("foreground");
+        padding: 2vw 5vw;
+
+        .titleContainer {
+            @include mixins.flex();
+
+            img {
+                @include mixins.square-element(2.5em);
+                border: 1px solid #000;
+                border-radius: 50%;
+                margin-right: 1.5em;
+            }
+
+            h4 {
+                font-size: functions.font-size("lg");
+                font-weight: 600;
+            }
+        }
+
+        .navWrapper {
+            nav {
+                ul {
+                    @include mixins.flex(row, center, space-between);
+                    list-style: none;
+
+                    li {
+                        a {
+                            display: block;
+                            padding: 0 1em;
+                            letter-spacing: 1px;
+                            color: functions.color("foreground");
+                            font-size: functions.font-size("base") + 0.15rem;
+                            font-weight: 500;
+                        }
+
+                        &:nth-child(2) {
+                            margin: 0 2em;
+                        }
+                    }
+                }
+            }
+        }
+
+        .buttonContainer {
+            a {
+                display: block;
+                padding: 0.75em 1.5em;
+                border: 2px solid functions.color("foreground");
+                color: functions.color("foreground");
+                font-weight: 500;
+            }
+        }
+    }
+}
