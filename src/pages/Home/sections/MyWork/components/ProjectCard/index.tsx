@@ -1,14 +1,18 @@
 import styles from "./index.module.scss";
 
+import RightArrowIcon from "../../../../../../assets/images/icons/arrow-right.svg";
+import OpenLinkIcon from "../../../../../../assets/images/icons/open-link.svg";
+
 interface ProjectCardOptions {
     imgSrc: string;
     title: string;
     subTitle: string;
     description: string;
+    bulletPoints: [string, string] | [string, string, string];
 }
 
 function ProjectCard({
-    imgSrc, title, subTitle, description
+    imgSrc, title, subTitle, description, bulletPoints
 }: ProjectCardOptions) {
     return (
         <article className={styles.projectCard}>
@@ -18,12 +22,36 @@ function ProjectCard({
                 </div>
 
                 <div className={styles.textSide}>
-                    <div className={styles.heading}>
-                        <h1>{title}</h1>
-                        <h2>{subTitle}</h2>
+                    <div className={styles.textContainer}>
+                        <div className={styles.heading}>
+                            <h1>{title}</h1>
+                            <h2>{subTitle}</h2>
+                        </div>
+
+                        <p>{description}</p>
+
+                        <ul>
+                            {
+                                bulletPoints.map(str => (
+                                    <li>
+                                        <p>{str}</p>
+                                    </li>
+                                ))
+                            }
+                        </ul>
                     </div>
 
-                    <p>{description}</p>
+                    <div className={styles.buttonRow}>
+                        <a>
+                            <p>Read More</p>
+                            <img src={RightArrowIcon} alt="Right Arrow" />
+                        </a>
+
+                        <a>
+                            <p>Visit Site</p>
+                            <img src={OpenLinkIcon} alt="Right Arrow" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </article>

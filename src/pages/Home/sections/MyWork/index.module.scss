@@ -5,6 +5,8 @@
     @include mixins.inner-page();
 
     .content {
+        padding: 4vw;
+
         h1 {
             font-size: functions.font-size("xl");
         }
