@@ -19,6 +19,28 @@ function HighlightedProjects() {
                         "Designed a clean and modern webpage.",
                         "Surpassed ### downloads."
                     ]}/>
+
+                <ProjectCard 
+                    imgSrc={KanaFlowCover}
+                    title="KanaFlow"
+                    subTitle="Front-End Developer | App Developer"
+                    description="A mobile app for practicing Japanese Kana memorization. Complemented by a webpage."
+                    bulletPoints={[
+                        "Developed a responsive and clean UI for phone and tablets.",
+                        "Designed a clean and modern webpage.",
+                        "Surpassed ### downloads."
+                    ]}/>
+
+                <ProjectCard 
+                    imgSrc={KanaFlowCover}
+                    title="KanaFlow"
+                    subTitle="Front-End Developer | App Developer"
+                    description="A mobile app for practicing Japanese Kana memorization. Complemented by a webpage."
+                    bulletPoints={[
+                        "Developed a responsive and clean UI for phone and tablets.",
+                        "Designed a clean and modern webpage.",
+                        "Surpassed ### downloads."
+                    ]}/>
             </div>
         </section>
     )
