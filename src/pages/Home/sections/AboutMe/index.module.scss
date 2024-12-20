@@ -1,8 +1,18 @@
 @use "../../../../styles/mixins";
 
+@use "../../../../styles/functions";
+
 .aboutMe {
     @include mixins.inner-page();
-    background-color: lightcoral;
     position: absolute;
     top: 0;
+    left: 0;
+
+    .content {
+        padding: 4vw;
+
+        h1 {
+            font-size: functions.font-size("xl");
+        }
+    }
 }
