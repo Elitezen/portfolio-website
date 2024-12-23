@@ -6,12 +6,12 @@ $screen-width-breakpoint: 950px;
 .projectCard {
     width: 100%;
     position: relative;
-    margin: 2em 0;
+    margin: 6em 0;
 
     .content {
         @include mixins.flex(row, stretch, space-between);
         gap: 2em;
-        padding: 1em 0;
+        padding: 2em 0;
         border-bottom: 1px solid #4b4b4b;
 
         .imageSide, .textSide {
