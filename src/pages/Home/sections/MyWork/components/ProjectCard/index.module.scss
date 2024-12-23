@@ -1,6 +1,8 @@
 @use "../../../../../../styles/mixins";
 @use "../../../../../../styles/functions";
 
+$screen-width-breakpoint: 950px;
+
 .projectCard {
     width: 100%;
     position: relative;
@@ -21,8 +23,8 @@
             @include mixins.flex(row, flex-start, flex-start);
 
             img {
-                width: 80%;
-                max-width: 750px;
+                width: 85%;
+                max-width: 1000px;
                 height: auto;
                 float: right
             }
@@ -35,7 +37,7 @@
                 h1 {
                     margin: 0;
                     padding: 0;
-                    line-height: 0.8;
+                    line-height: 1;
                     font-size: clamp(
                         functions.font-size("base"),
                         7vw,
@@ -44,7 +46,7 @@
                 }
     
                 h2 {
-                    line-height: 2;
+                    margin-bottom: 1.5em;
                     color: functions.color("primary");
                     font-size: clamp(
                         functions.font-size("sm"),
@@ -90,6 +92,7 @@
                     border: 2px solid #FFF;
                     color: #FFF;
                     padding: 0.75em 1.3em;
+                    white-space: nowrap;
 
                     img {
                         @include mixins.square-element(1.5em);
@@ -99,6 +102,24 @@
                     &:nth-child(1) {
                         margin-right: 1.5em;
                     }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: $screen-width-breakpoint) {
+    .projectCard {
+        margin: 4em 0;
+
+        .content {
+            @include mixins.flex(column);
+
+            .imageSide {
+                img {
+                    margin: auto;
+                    width: 100%;
                 }
             }
         }

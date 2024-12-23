@@ -20,7 +20,7 @@ function Experience() {
 
                 <div className={styles.entry}>
                     <h3>Full-Stack Developer as a freelancer, Scriptly Studios</h3>
-                    <p>November 2023 - Present</p>
+                    <p>October 2023 - Present</p>
                 </div>
 
                 <div className={styles.entry}>

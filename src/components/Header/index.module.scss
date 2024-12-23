@@ -4,13 +4,14 @@
 header {
     position: sticky;
     top: 0;
+    z-index: 999;
 
     .content {
         @include mixins.flex(row, center, space-between);
         transition: background-color 0.5s ease-in-out;
         background-color: rgba(0, 0, 0, 0);
         color: functions.color("foreground");
-        padding: 2vw 5vw;
+        padding: 2em 4em;
 
         .titleContainer {
             @include mixins.flex();

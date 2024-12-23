@@ -2,6 +2,8 @@
 
 @use "../../../../styles/functions";
 
+$screen-width-breakpoint: 915px;
+
 .aboutMe {
     @include mixins.inner-page();
     position: absolute;

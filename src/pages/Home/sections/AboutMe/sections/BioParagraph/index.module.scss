@@ -25,3 +25,22 @@
         }
     }
 }
+
+.bioParagraph {
+    .paragraphAndGraphic {
+        @include mixins.flex(column-reverse);
+
+        .paragraph {
+            line-height: 1.75;
+            font-size: functions.font-size("base");
+        }
+
+        .graphic {
+            width: 100%;
+
+            img {
+                width: clamp(300px, 60%, 800px) !important;
+            }
+        }
+    }
+}

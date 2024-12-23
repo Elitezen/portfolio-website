@@ -1,6 +1,8 @@
 @use "../../../../styles/mixins";
 @use "../../../../styles/functions";
 
+$screen-width-breakpoint: 950px;
+
 .workAndAboutMe {
     position: relative;
     background-color: rgb(46, 46, 46);
@@ -10,7 +12,7 @@
 
         .containerHeader {
             @include mixins.flex();
-            padding: 5em;
+            padding: 3em;
 
             nav {
                 position: relative; // Ensure the moving square is positioned relative to the nav container
@@ -65,6 +67,18 @@
         .innerPageWrapper {
             position: relative;
             margin: 3em 0;
+        }
+    }
+}
+
+@media screen and (max-width: $screen-width-breakpoint) {
+    .workAndAboutMe {
+        .content {
+            padding: 1em 1.5em;
+    
+            .containerHeader {
+                padding: 2em;
+            }
         }
     }
 }

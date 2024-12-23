@@ -1,0 +1,10 @@
+@use "../../styles/functions";
+
+footer {
+    border-top: 1px solid #ffffff54;
+
+    .content {
+        font-size: functions.font-size("lg");
+        padding: 2em;
+    }
+}

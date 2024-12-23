@@ -1,5 +1,7 @@
 @use "../../../../styles/functions";
 
+$screen-width-breakpoint: 900px;
+
 .hero {
     .content {
         color: functions.color("foreground");
@@ -50,6 +52,52 @@
             .footer {
                 font-size: functions.font-size("base") + 0.3rem;
                 margin-top: 6em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $screen-width-breakpoint) {
+    .hero {
+        .content {
+            padding: 3em 2.5em;
+
+            .heading {
+                line-height: 1.2;
+
+                h1 {
+                    white-space: nowrap;
+                    font-size: functions.font-size("xl");
+                }
+    
+                h2 {
+                    color: functions.color("primary");
+                    font-size: functions.font-size("lg");
+                }
+    
+                h3 {
+                    font-size: functions.font-size("lg");
+                    opacity: 1;
+                }
+            }
+
+            .descriptionWrapper {
+                margin: 2em 0;
+    
+                p {
+                    font-size: functions.font-size("base");
+                    font-weight: 500;
+                    max-width: 55ch;
+    
+                    span {
+                        font-weight: bolder;
+                    }
+                }
+    
+                .footer {
+                    font-size: functions.font-size("base");
+                    margin-top: 2em;
+                }
             }
         }
     }
