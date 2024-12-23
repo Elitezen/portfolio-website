@@ -12,7 +12,6 @@ $screen-width-breakpoint: 950px;
         @include mixins.flex(row, stretch, space-between);
         gap: 2em;
         padding: 2em 0;
-        border-bottom: 1px solid #4b4b4b;
 
         .imageSide, .textSide {
             display: flex;
@@ -76,7 +75,7 @@ $screen-width-breakpoint: 950px;
                             flex-shrink: 0; // Prevent the bullet from shrinking
                             width: 1.25em; // Bullet size
                             height: 1.25em;
-                            background: url('../../../../../../assets/images/icons/checkbox.svg') no-repeat center;
+                            background: url('../../../../../../assets/images/icons/checkmark.svg') no-repeat center;
                             background-size: contain; // Ensure the SVG fits perfectly
                         }
                     }
@@ -89,14 +88,14 @@ $screen-width-breakpoint: 950px;
                 a {
                     @include mixins.flex(row, center, space-between);
                     background-color: transparent;
-                    border: 2px solid #FFF;
-                    color: #FFF;
+                    border: 3px solid #000;
                     padding: 0.75em 1.3em;
                     white-space: nowrap;
 
                     img {
                         @include mixins.square-element(1.5em);
                         margin-left: 0.75em;
+                        filter: invert(1);
                     }
 
                     &:nth-child(1) {
