@@ -56,6 +56,10 @@ $screen-width-breakpoint: 900px;
             text-align: center;
             font-size: functions.font-size("base") + 0.1rem;
             margin-top: 6em;
+
+            p {
+                margin-bottom: 1.5em;
+            }
         }
     }
 }
