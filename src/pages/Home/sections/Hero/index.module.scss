@@ -48,14 +48,62 @@ $screen-width-breakpoint: 900px;
                     font-weight: bolder;
                 }
             }
+        }
 
-            .footer {
-                font-size: functions.font-size("base") + 0.3rem;
-                margin-top: 6em;
-            }
+        .heroFooter {
+            position: relative;
+            top: 2.5em;
+            text-align: center;
+            font-size: functions.font-size("base") + 0.1rem;
+            margin-top: 6em;
         }
     }
 }
+
+.arrows {
+    width: 60px;
+    height: 72px;
+    margin: 1.5em 0;
+  }
+  
+  .arrows path {
+    stroke: #FFF;
+    fill: transparent;
+    stroke-width: 2px;  
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite; 
+  }
+  
+  @keyframes arrow
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  @-webkit-keyframes arrow /*Safari and Chrome*/
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  .arrows path.a1 {
+    animation-delay:-1s;
+    -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a2 {
+    animation-delay:-0.5s;
+    -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a3 { 
+    animation-delay:0s;
+    -webkit-animation-delay:0s; /* Safari 和 Chrome */
+  }
 
 @media screen and (max-width: $screen-width-breakpoint) {
     .hero {
