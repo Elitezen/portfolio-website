@@ -1,0 +1,33 @@
+@use "../../../../styles/mixins";
+
+.formWrapper {
+    form {
+        @include mixins.flex(column);
+
+        input, textarea, button {
+            margin: 1em 0;
+            width: clamp(200px, 50%, 400px);
+            padding: 1em;
+        }
+
+        .messageInput {
+            height: 12.5em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p {
+            margin: 1em 0;
+            font-weight: 500;
+            height: 1em;
+            opacity: 0;
+            color: #F00;
+        }
+
+        button {
+            border: 2px solid #FFF;
+            background-color: transparent;
+            color: #FFF;
+            cursor: pointer;
+        }
+    }
+}

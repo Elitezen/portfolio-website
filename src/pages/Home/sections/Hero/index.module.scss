@@ -24,9 +24,10 @@ $screen-width-breakpoint: 900px;
         }
 
         .heading {
-            line-height: 1;
+            line-height: 1.15;
+            
             h1 {
-                font-size: functions.font-size("hero");
+                font-size: functions.font-size("hero") - 0.5rem;
                 white-space: nowrap;
             }
             
@@ -37,8 +38,6 @@ $screen-width-breakpoint: 900px;
         }
 
         .descriptionWrapper {
-            margin-top: 1em;
-            
             p {
                 font-size: functions.font-size("lg") + 0.25rem;
                 font-weight: 500;

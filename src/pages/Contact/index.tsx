@@ -1,12 +1,11 @@
 import Header from '../../components/Header';
-import SpaceBackground from '../../components/SpaceBackground';
+import ContactForm from './sections/ContactForm';
 
 function Contact() {
     return (
         <main>
             <Header />
-            
-            <SpaceBackground />
+            <ContactForm />
         </main>
     )
 }
