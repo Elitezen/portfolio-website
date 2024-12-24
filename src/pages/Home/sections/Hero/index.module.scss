@@ -1,12 +1,16 @@
 @use "../../../../styles/functions";
+@use "../../../../styles/mixins";
 
 $screen-width-breakpoint: 900px;
 
 .hero {
+    @include mixins.flex();
+
     .content {
         color: functions.color("foreground");
         background-color: transparent;
-        padding: 4em 8em;
+        padding: 2em 0;
+        margin: 2em 5em;
 
         span.strongGlow {
             text-shadow: 0 0 5px #fff,     // Core glow
@@ -20,16 +24,12 @@ $screen-width-breakpoint: 900px;
         }
 
         .heading {
-            line-height: 1.2;
+            line-height: 1;
             h1 {
                 font-size: functions.font-size("hero");
+                white-space: nowrap;
             }
-
-            h2 {
-                color: functions.color("primary");
-                font-size: functions.font-size("lg") + 0.5rem;
-            }
-
+            
             h3 {
                 font-size: functions.font-size("lg")  + 1.2rem;
                 opacity: 1;
@@ -37,12 +37,12 @@ $screen-width-breakpoint: 900px;
         }
 
         .descriptionWrapper {
-            margin: 2em 0;
-
+            margin-top: 1em;
+            
             p {
-                font-size: functions.font-size("lg") + 0.5rem;
+                font-size: functions.font-size("lg") + 0.25rem;
                 font-weight: 500;
-                max-width: 55ch;
+                max-width: 70ch;
 
                 span {
                     font-weight: bolder;
@@ -52,13 +52,15 @@ $screen-width-breakpoint: 900px;
 
         .heroFooter {
             position: relative;
-            top: 2.5em;
+            top: 6em;
             text-align: center;
-            font-size: functions.font-size("base") + 0.1rem;
-            margin-top: 6em;
+            font-size: functions.font-size("base") + 0.2rem;
+            margin-top: 2.25em;
+            padding-bottom: 3em;
 
             p {
                 margin-bottom: 1.5em;
+                font-weight: 500;
             }
         }
     }
@@ -67,7 +69,7 @@ $screen-width-breakpoint: 900px;
 .arrows {
     width: 60px;
     height: 72px;
-    margin: 1.5em 0;
+    margin-bottom: 2em;
   }
   
   .arrows path {
@@ -120,6 +122,7 @@ $screen-width-breakpoint: 900px;
                 h1 {
                     white-space: nowrap;
                     font-size: functions.font-size("xl");
+                    
                 }
     
                 h2 {

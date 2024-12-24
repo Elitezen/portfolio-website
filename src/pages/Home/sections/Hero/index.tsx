@@ -7,7 +7,6 @@ function Hero() {
                 <div className={styles.heading}>
                     <h3>Greetings!</h3>
                     <h1><span className={styles.strongGlow}>Soy Alejandro</span></h1>
-                    <h2>Web Developer</h2>
                 </div>
 
                 <div className={styles.descriptionWrapper}>

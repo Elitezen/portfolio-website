@@ -22,7 +22,7 @@ $screen-width-breakpoint: 950px;
             @include mixins.flex(row, flex-start, flex-start);
 
             img {
-                width: 85%;
+                width: 80%;
                 max-width: 1000px;
                 height: auto;
                 float: right
