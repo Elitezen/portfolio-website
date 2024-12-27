@@ -24,8 +24,8 @@ function ProjectCard({
                 <div className={styles.textSide}>
                     <div className={styles.textContainer}>
                         <div className={styles.heading}>
-                            <h1>{title}</h1>
-                            <h2>{subTitle}</h2>
+                            <h2>{title}</h2>
+                            <h3>{subTitle}</h3>
                         </div>
 
                         <p>{description}</p>

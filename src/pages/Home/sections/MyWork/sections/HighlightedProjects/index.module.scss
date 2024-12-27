@@ -1,8 +1,18 @@
 @use "../../../../../../styles/mixins";
 @use "../../../../../../styles/functions";
 
+$screen-width-breakpoint: 950px;
+
 .highlightedProjects {
     .projectCards {
         @include mixins.flex(column, center, space-between);
+    }
+}
+
+@media screen and (max-width: $screen-width-breakpoint) {
+    .highlightedProjects {
+        h1 {
+            text-align: center;
+        }
     }
 }

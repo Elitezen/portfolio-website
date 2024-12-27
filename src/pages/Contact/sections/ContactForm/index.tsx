@@ -18,6 +18,7 @@ function ContactForm() {
         e.preventDefault();
         if (validateEmail(email)) {
           setIsValid(true);
+          setNotice("Sending...");
           sendEmail();
         } else {
           setIsValid(false);

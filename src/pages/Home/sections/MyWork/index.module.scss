@@ -5,12 +5,12 @@
     @include mixins.inner-page();
 
     .content {
-        padding: 4vw;
+        padding: 2vw;
 
         h1 {
             font-size: clamp(
                 functions.font-size("lg"),
-                7vw,
+                10vw,
                 functions.font-size("xxl"),
             );
         }

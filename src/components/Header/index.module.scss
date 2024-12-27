@@ -13,6 +13,16 @@ header {
         color: functions.color("foreground");
         padding: 1.5em 4em;
 
+        button {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+
+            img {
+                @include mixins.square-element(3em);
+            }
+        }
+
         .titleContainer {
             @include mixins.flex();
 
@@ -24,9 +34,12 @@ header {
             }
 
             h4 {
+                color: #FFF;
                 font-size: functions.font-size("lg");
                 font-weight: 600;
             }
+
+            cursor: pointer;
         }
 
         .navWrapper {

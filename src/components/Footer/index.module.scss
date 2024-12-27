@@ -9,11 +9,16 @@ footer {
 
         h4 {
             font-weight: 400;
+            
+            a {
+                
+                color: #FFF !important;
 
-            span {
-                font-weight: 500;
-                text-shadow: 0 0 5px #fff,     // Core glow
-                    0 0 3px #fff,    // Medium glow
+                span {
+                    font-weight: 500;
+                    text-shadow: 0 0 5px #fff,     // Core glow
+                        0 0 3px #fff,    // Medium glow
+                }
             }
         }
     }

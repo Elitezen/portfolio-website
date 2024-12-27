@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import useWindowWidth from "../../(util)/useWindowWidth";
 
+import menuIcon from "../../assets/images/icons/menu-icon.svg";
+
 const SCROLL_Y_BREAKPOINT = 50;
 const SCREEN_WIDTH_BREAKPOINT = 1_000;
 
@@ -32,10 +34,10 @@ function Header() {
     return (
         <header>
             <div className={styles.content}>
-                <div className={styles.titleContainer}>
+                <Link className={styles.titleContainer}>
                     <img src={ElitezenIcon} alt="Elitezen" />
                     <h4>Elitezen</h4>
-                </div>
+                </Link>
 
                 {
                     screenWidth > SCREEN_WIDTH_BREAKPOINT ?
@@ -66,7 +68,9 @@ function Header() {
                             </div>
                         </>
                     ) : (
-                        <p>=</p>
+                        <button>
+                            <img src={menuIcon} />
+                        </button>
                     )
                 }
             </div>
