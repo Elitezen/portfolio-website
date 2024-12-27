@@ -34,7 +34,7 @@ function Header() {
     return (
         <header>
             <div className={styles.content}>
-                <Link className={styles.titleContainer}>
+                <Link to="/" className={styles.titleContainer}>
                     <img src={ElitezenIcon} alt="Elitezen" />
                     <h4>Elitezen</h4>
                 </Link>

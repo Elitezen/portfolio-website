@@ -14,17 +14,24 @@ function HighlightedProjects() {
                     title="KanaFlow"
                     subTitle="Front-End Developer | App Developer"
                     description="A mobile app for practicing Japanese Kana memorization. Complemented by a webpage."
+                    technologies={[
+                        "React Native", "React", "SCSS"
+                    ]}
                     bulletPoints={[
                         "Developed a responsive and clean UI for phone and tablets.",
                         "Designed a clean and modern webpage.",
                         "Surpassed ### downloads."
-                    ]}/>
+                    ]
+                    }/>
 
                 <ProjectCard 
                     imgSrc={KanaFlowCover}
                     title="Scriptly Studios"
                     subTitle="Full-Stack Developer | Freelancer"
                     description="Developed the official website, moderation system, and a promotional code system which successfully served 15,000 codes"
+                    technologies={[
+                        "React", "SCSS", "Node.JS", "TypeScript", "MongoDB"
+                    ]}
                     bulletPoints={[
                         "Designed and developed a webpage visited by hundreds.",
                         "Produced tools used to moderate a Discord server of 18,000 users.",
@@ -36,6 +43,9 @@ function HighlightedProjects() {
                     title="Expressia"
                     subTitle="Full-Stack Developer"
                     description="A mobile app for practicing Japanese Kana memorization. Complemented by a webpage."
+                    technologies={[
+                        "React", "SCSS", "Node.JS", "TypeScript", "Express API"
+                    ]}
                     bulletPoints={[
                         "Reached XXXX server invites",
                         "Serving XXXXXX users"

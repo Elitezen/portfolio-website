@@ -9,10 +9,11 @@ interface ProjectCardOptions {
     subTitle: string;
     description: string;
     bulletPoints: [string, string] | [string, string, string];
+    technologies: string[];
 }
 
 function ProjectCard({
-    imgSrc, title, subTitle, description, bulletPoints
+    imgSrc, title, subTitle, description, bulletPoints, technologies
 }: ProjectCardOptions) {
     return (
         <article className={styles.projectCard}>
@@ -24,13 +25,21 @@ function ProjectCard({
                 <div className={styles.textSide}>
                     <div className={styles.textContainer}>
                         <div className={styles.heading}>
-                            <h2>{title}</h2>
                             <h3>{subTitle}</h3>
+                            <h2>{title}</h2>      
                         </div>
 
-                        <p>{description}</p>
+                        <p className={styles.description}>{description}</p>
 
-                        <ul>
+                        <ul className={styles.technologies}>
+                            {
+                                technologies.map(tech => (
+                                    <li>{tech}</li>
+                                ))
+                            }
+                        </ul>
+
+                        <ul className={styles.bullets}>
                             {
                                 bulletPoints.map(str => (
                                     <li>
