@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import styles from "./index.module.scss";
+import useWindowWidth from "../../(util)/useWindowWidth";
 
 // Constants for stars and screen height
 const NUM_STARS = 300;
@@ -9,6 +10,7 @@ const PAGE_HEIGHT_VH = 100;
 const BASE_FALL_SPEED = 0.008; // Base fall speed to scale with size
 
 const SpaceBackground: React.FC = () => {
+  const screenWidth = useWindowWidth();
   const spaceRef = useRef<HTMLDivElement>(null);
   const starsRef = useRef<HTMLElement[]>([]);
 
@@ -69,7 +71,7 @@ const SpaceBackground: React.FC = () => {
       }
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    if (screenWidth > 1_000) window.addEventListener("mousemove", handleMouseMove);
 
     // Animation to move stars downward with varying speeds based on the FALL_SPEED constant
     const moveStarsDown = () => {

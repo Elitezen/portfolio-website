@@ -113,15 +113,17 @@ $screen-width-breakpoint: 900px;
 @media screen and (max-width: $screen-width-breakpoint) {
     .hero {
         .content {
-            padding: 3em 2.5em;
+            padding: 0em 2em;
 
             .heading {
-                line-height: 1.2;
-
                 h1 {
                     white-space: nowrap;
-                    font-size: functions.font-size("xl");
-                    
+                    font-size: clamp(
+                        functions.font-size("xl"),
+                        10vw,
+                        functions.font-size("hero")
+                    );
+                    line-height: 1.5;
                 }
     
                 h2 {
@@ -136,22 +138,21 @@ $screen-width-breakpoint: 900px;
             }
 
             .descriptionWrapper {
-                margin: 2em 0;
-    
                 p {
-                    font-size: functions.font-size("base");
+                    line-height: 1.5;
+                    font-size: functions.font-size("base") + 0.2rem;
                     font-weight: 500;
-                    max-width: 55ch;
+                    max-width: 60ch;
     
                     span {
                         font-weight: bolder;
                     }
                 }
-    
-                .footer {
-                    font-size: functions.font-size("base");
-                    margin-top: 2em;
-                }
+            }
+
+            .heroFooter {
+                top: 3.5em;
+                margin-top: 0;
             }
         }
     }

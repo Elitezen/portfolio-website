@@ -1,6 +1,8 @@
 @use "../../styles/mixins.scss";
 @use "../../styles/functions";
 
+$screen-width-breakpoint: 1000px;
+
 header {
     position: sticky;
     top: 0;
@@ -19,7 +21,7 @@ header {
             cursor: pointer;
 
             img {
-                @include mixins.square-element(3em);
+                @include mixins.square-element(3.5em);
             }
         }
 
@@ -73,6 +75,24 @@ header {
                 border: 2px solid functions.color("foreground");
                 color: functions.color("foreground");
                 font-weight: 500;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $screen-width-breakpoint) {
+    header {
+        .content {
+            padding: 2em 1.5em;
+
+            .titleContainer {
+                img {
+                    margin-right: 0.75em;
+                }
+
+                h4 {
+                    font-size: functions.font-size("base") + 0.25rem;
+                }
             }
         }
     }

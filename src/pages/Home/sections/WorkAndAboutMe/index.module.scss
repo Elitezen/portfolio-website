@@ -36,6 +36,7 @@ $screen-width-breakpoint: 950px;
                             font-size: functions.font-size("base") + 0.15rem;
                             position: relative; // Ensure button content stays in place
                             white-space: nowrap;
+                            color: #000;
 
                             &.selected {
                                 color: #FFF;
