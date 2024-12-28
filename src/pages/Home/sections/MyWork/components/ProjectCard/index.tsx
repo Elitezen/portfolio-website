@@ -58,7 +58,7 @@ function ProjectCard({
                             <img src={RightArrowIcon} alt="Right Arrow" />
                         </Link>
 
-                        <a>
+                        <a href="#">
                             <p>Visit Site</p>
                             <img src={OpenLinkIcon} alt="Right Arrow" />
                         </a>

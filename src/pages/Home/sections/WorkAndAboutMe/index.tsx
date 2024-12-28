@@ -49,7 +49,7 @@ function WorkAndAboutMe() {
                 </div>
                 <div className={styles.innerPageWrapper}>
                     <MyWork visible={selectedTab === TabName.MyWork}/>
-                    <AboutMe visible={selectedTab === TabName.AboutMe}/>
+                    {/* <AboutMe visible={selectedTab === TabName.AboutMe}/> */}
                 </div>
             </div>
         </section>
