@@ -2,6 +2,7 @@ import styles from "./index.module.scss";
 
 import RightArrowIcon from "../../../../../../assets/images/icons/arrow-right.svg";
 import OpenLinkIcon from "../../../../../../assets/images/icons/open-link.svg";
+import { Link } from "react-router-dom";
 
 interface ProjectCardOptions {
     imgSrc: string;
@@ -10,10 +11,11 @@ interface ProjectCardOptions {
     description: string;
     bulletPoints: [string, string] | [string, string, string];
     technologies: string[];
+    link: string;
 }
 
 function ProjectCard({
-    imgSrc, title, subTitle, description, bulletPoints, technologies
+    imgSrc, title, subTitle, description, bulletPoints, technologies, link
 }: ProjectCardOptions) {
     return (
         <article className={styles.projectCard}>
@@ -51,10 +53,10 @@ function ProjectCard({
                     </div>
 
                     <div className={styles.buttonRow}>
-                        <a>
+                        <Link to={link}>
                             <p>Read More</p>
                             <img src={RightArrowIcon} alt="Right Arrow" />
-                        </a>
+                        </Link>
 
                         <a>
                             <p>Visit Site</p>

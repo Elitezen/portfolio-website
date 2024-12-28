@@ -8,6 +8,7 @@ import {
 import "./main.scss";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
+import ScriptlyStudios from "./pages/Home/sections/MyWork/pages/ScriptlyStudios";
 
 const router = createBrowserRouter([
 	{
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
 	{
 		path: "/contact",
 		element: <Contact />
+	},
+	{
+		path: "scriptly-studios",
+		element: <ScriptlyStudios />
 	}
 ]);
 

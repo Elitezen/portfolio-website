@@ -22,7 +22,8 @@ function HighlightedProjects() {
                         "Designed and developed a webpage visited by hundreds.",
                         "Produced tools used to moderate a Discord server of 18,000 users.",
                         "Developed and deployed a promotional code API and database that served 15,000 players with a %100 uptime."
-                    ]}/>
+                    ]}
+                    link="scriptly-studios"/>
 
                 <ProjectCard 
                     imgSrc={KanaFlowCover}
@@ -37,7 +38,8 @@ function HighlightedProjects() {
                         "Designed a clean and modern webpage.",
                         "Surpassed ### downloads."
                     ]
-                    }/>
+                    }
+                    link="/kanaflow"/>
 
                 <ProjectCard 
                     imgSrc={KanaFlowCover}
@@ -50,7 +52,8 @@ function HighlightedProjects() {
                     bulletPoints={[
                         "Reached XXXX server invites",
                         "Serving XXXXXX users"
-                    ]}/>
+                    ]}
+                    link="expressia"/>
             </div>
         </section>
     )
