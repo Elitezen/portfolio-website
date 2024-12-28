@@ -9,6 +9,7 @@ import "./main.scss";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import ScriptlyStudios from "./pages/Home/sections/MyWork/pages/ScriptlyStudios";
+import KanaFlow from "./pages/Home/sections/MyWork/pages/KanaFlow";
 
 const router = createBrowserRouter([
 	{
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
 	{
 		path: "scriptly-studios",
 		element: <ScriptlyStudios />
+	},
+	{
+		path: "kanaflow",
+		element: <KanaFlow />
 	}
 ]);
 

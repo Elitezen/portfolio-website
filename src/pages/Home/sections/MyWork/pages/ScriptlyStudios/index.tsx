@@ -73,7 +73,7 @@ function ScriptlyStudios() {
                         <section>
                             <h3>Acomplishments</h3>
 
-                            <ul className={projectPageStyles.accomplishments}>
+                            <ul className={projectPageStyles.list}>
                                 <li>Designed a sleek webpage</li>
                                 <li>Established the studios' first official website which frequently appears as the first result for Google searches</li>
                             </ul>
@@ -87,7 +87,7 @@ function ScriptlyStudios() {
                         <section>
                             <h3>Acomplishments</h3>
 
-                            <ul className={projectPageStyles.accomplishments}>
+                            <ul className={projectPageStyles.list}>
                                 <li>Effectively coordinated with Flag Wars game and FreshCut app developers to design a promotional code redeeming system</li>
                                 <li>Developed an Express API to manage the reading and redeeming of the promo codes database</li>
                                 <li>Deployed the API and served 15,000 code redemptions with %100 uptime and 0 production errors</li>
@@ -102,7 +102,7 @@ function ScriptlyStudios() {
                         <section>
                             <h3>Acomplishments</h3>
 
-                            <ul className={projectPageStyles.accomplishments}>
+                            <ul className={projectPageStyles.list}>
                                 <li>Worked alongside the community manager to plan and design moderator tools to address ongoing needs for community safety</li>
                                 <li>Developed and deployed a Discord app for moderators to carry out moderation for +18,000 server members</li>
                             </ul>

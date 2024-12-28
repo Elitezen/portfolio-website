@@ -16,7 +16,7 @@ function HighlightedProjects() {
                     subTitle="Full-Stack Developer | Freelancer"
                     description="Developed the official website, moderation system, and a promotional code system which successfully served 15,000 codes"
                     technologies={[
-                        "React", "SCSS", "Node.JS", "TypeScript", "Express API", "MongoDB"
+                        "React", "SCSS", "NodeJS", "TypeScript", "Express API", "MongoDB"
                     ]}
                     bulletPoints={[
                         "Designed and developed a webpage visited by hundreds.",
@@ -31,7 +31,7 @@ function HighlightedProjects() {
                     subTitle="Front-End Developer | App Developer"
                     description="A mobile app for practicing Japanese Kana memorization. Complemented by a webpage."
                     technologies={[
-                        "React Native", "React", "SCSS"
+                        "React Native", "TypeScript", "NodeJS", "React", "SCSS"
                     ]}
                     bulletPoints={[
                         "Developed a responsive and clean UI for phone and tablets.",
