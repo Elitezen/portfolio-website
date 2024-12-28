@@ -5,7 +5,7 @@ footer {
 
     .content {
         font-size: functions.font-size("lg");
-        padding: 8vw;
+        padding: 2em 3em;
 
         h4 {
             font-weight: 400;
@@ -20,6 +20,16 @@ footer {
                         0 0 3px #fff,    // Medium glow
                 }
             }
+        }
+
+        .button {
+            display: block;
+            width: 10em;
+            text-align: center;
+            border: 2px solid #FFF;
+            color: #FFF;
+            margin: 1.25em 0 0 0;
+            padding: 0.5em 1em;
         }
     }
 }
