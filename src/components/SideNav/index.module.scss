@@ -1,0 +1,62 @@
+@use "../../styles/mixins";
+@use "../../styles/functions";
+
+$width: 20em;
+
+.sideNav {
+    position: fixed;
+    top: 0;
+    width: $width;
+    right: -$width;
+    height: 100vh;
+    background-color: #000;
+    color: #FFF;
+    z-index: 999;
+    
+    transition: right 165ms ease-in-out;
+
+    .content {
+        @include mixins.flex(column, center, space-between);
+        padding: 1.5em 2.5em;
+        height: 100vh;
+
+        .heading {
+            width: 100%;
+            @include mixins.flex(row, flex-end, flex-end);
+
+            button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+
+                img {
+                    @include mixins.square-element(3.5em);
+                }
+            }
+        }
+
+        .links {
+            position: relative;
+            bottom: 15vh;
+            width: 100%;
+
+            ul {
+                @include mixins.flex(column, center, space-between);
+                
+                gap: 2em;
+                list-style: none;
+
+                li {
+                    a {
+                        display: block;
+                        width: 100%;
+                        color: #FFF;
+                        padding: 1em;
+                        font-weight: 600;
+                        font-size: functions.font-size("lg") - 0.25rem;
+                    }
+                }
+            }
+        }
+    }
+}

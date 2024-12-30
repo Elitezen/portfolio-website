@@ -89,6 +89,13 @@ function KanaFlow() {
                             </ol>
                         </section>
                     </section>
+
+                    <section>
+                        <h2>1. Web Development</h2>
+                        <p>
+                            I designed a simple webpage not only to showcase the app, but to also contain a support page and privacy policy required by the Apple Appstore
+                        </p>
+                    </section>
                 </ProjectPage>
             <Footer />
         </main>

@@ -11,7 +11,7 @@ header {
     .content {
         @include mixins.flex(row, center, space-between);
         transition: background-color 0.5s ease-in-out;
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 1);
         color: functions.color("foreground");
         padding: 1.5em 4em;
 
@@ -83,7 +83,7 @@ header {
 @media screen and (max-width: $screen-width-breakpoint) {
     header {
         .content {
-            padding: 2em 1.5em;
+            padding: 1.5em 2.5em;
 
             .titleContainer {
                 img {

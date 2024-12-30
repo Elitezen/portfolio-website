@@ -5,7 +5,7 @@ function Hero() {
         <section className={styles.hero}>
             <div className={styles.content}>
                 <div className={styles.heading}>
-                    <h3>Greetings!</h3>
+                    <h3>👋 Greetings!</h3>
                     <h1><span className={styles.strongGlow}>Soy Alejandro</span></h1>
                 </div>
 
