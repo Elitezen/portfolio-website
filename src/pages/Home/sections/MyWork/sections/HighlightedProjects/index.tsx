@@ -16,7 +16,7 @@ function HighlightedProjects() {
                     subTitle="Full-Stack Developer | Freelancer"
                     description="Developed the official website, moderation system, and a promotional code system which successfully served 15,000 codes"
                     technologies={[
-                        "React", "SCSS", "NodeJS", "TypeScript", "Express API", "MongoDB"
+                        "React", "SCSS", "NodeJS", "TypeScript", "Express API", "MongoDB", "Lua"
                     ]}
                     bulletPoints={[
                         "Designed and developed a webpage visited by hundreds.",
