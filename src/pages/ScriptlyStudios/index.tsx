@@ -1,16 +1,16 @@
-import Footer from "../../../../../../components/Footer";
-import Header from "../../../../../../components/Header";
-import ProjectPage from "../../components/ProjectPage";
-import projectPageStyles from "../../components/ProjectPage/index.module.scss";
-import ScriptlyStudiosSite from "../../../../../../assets/images/screenshots/scriptly-studios.png";
-import type { Tech } from "../(typings)/interfaces";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import ProjectPage from "../(components)/ProjectPage";
+import projectPageStyles from "../(components)/ProjectPage/index.module.scss";
+import ScriptlyStudiosSite from "../../assets/images/screenshots/scriptly-studios.png"
+import type { Tech } from "../../(typings)/interfaces";
 
-import ReactIcon from "../../../../../../assets/images/icons/react.svg";
-import SCSSIcon from "../../../../../../assets/images/icons/sass.svg";
-import NodeJsIcon from "../../../../../../assets/images/icons/nodejs.svg";
-import TypeScriptIcon from "../../../../../../assets/images/icons/typescript.svg";
-import ExpressIcon from "../../../../../../assets/images/icons/express.svg";
-import MongoDBIcon from "../../../../../../assets/images/icons/mongodb.svg";
+import ReactIcon from "../../assets/images/icons/react.svg";
+import SCSSIcon from "../../assets/images/icons/sass.svg";
+import NodeJsIcon from "../../assets/images/icons/nodejs.svg";
+import TypeScriptIcon from "../../assets/images/icons/typescript.svg";
+import ExpressIcon from "../../assets/images/icons/express.svg";
+import MongoDBIcon from "../../assets/images/icons/mongodb.svg";
 
 const techs: Tech[] = [
     { imgSrc: ReactIcon, name: "React" },

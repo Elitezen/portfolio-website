@@ -1,15 +1,15 @@
-import Footer from "../../../../../../components/Footer";
-import Header from "../../../../../../components/Header";
-import ProjectPage from "../../components/ProjectPage";
-import projectPageStyles from "../../components/ProjectPage/index.module.scss";
-import KanaFlowSite from "../../../../../../assets/images/screenshots/kanaflow.png";
-import type { Tech } from "../(typings)/interfaces";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import ProjectPage from "../(components)/ProjectPage";
+import projectPageStyles from "../(components)/ProjectPage/index.module.scss";
+import KanaFlowSite from "../../assets/images/screenshots/kanaflow.png"
+import type { Tech } from "../../(typings)/interfaces";
 
-import ReactNativeIcon from "../../../../../../assets/images/icons/react-native.svg";
-import TypeScriptIcon from "../../../../../../assets/images/icons/typescript.svg";
-import NodeJsIcon from "../../../../../../assets/images/icons/nodejs.svg";
-import ReactIcon from "../../../../../../assets/images/icons/react.svg";
-import SCSSIcon from "../../../../../../assets/images/icons/sass.svg";
+import ReactNativeIcon from "../../assets/images/icons/react-native.svg";
+import TypeScriptIcon from "../../assets/images/icons/typescript.svg";
+import NodeJsIcon from "../../assets/images/icons/nodejs.svg";
+import ReactIcon from "../../assets/images/icons/react.svg";
+import SCSSIcon from "../../assets/images/icons/sass.svg";
 
 const techs: Tech[] = [
     { imgSrc: ReactNativeIcon, name: "React Native" },
