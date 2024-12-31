@@ -143,7 +143,7 @@ $screen-width-breakpoint: 950px;
 
 @media screen and (max-width: $screen-width-breakpoint) {
     .projectCard {
-        margin: 7em 0;
+        margin: 3em 0;
 
         .content {
             @include mixins.flex(column);
@@ -151,12 +151,13 @@ $screen-width-breakpoint: 950px;
             .imageSide {
                 img {
                     margin: auto;
-                    width: 75%;
+                    width: 90%;
+                    max-width: 600px;
                 }
             }
 
             .textSide {
-                margin-top: 0em;
+                margin-top: -2em;
             }
         }
     }

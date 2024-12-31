@@ -7,7 +7,7 @@
 
     .content {
         @include mixins.flex(column, center);
-        padding: 3em 2em;
+        padding: 3em 1.5em;
         margin: 0 auto;
         max-width: 1200px;
 
@@ -68,16 +68,20 @@
             gap: 4em;
             flex-wrap: wrap;
             margin-top: 2em;
+            margin-left: -1.25em;
 
             list-style: none;
 
             li {
+                min-width: 100px;
                 text-align: center;
+                
                 img {
-                    @include mixins.square-element(3.5em);
+                    @include mixins.square-element(3em);
                 }
 
                 p {
+                    font-size: functions.font-size("sm");
                     margin: 0.75em 0 0 0;
                 }
             }
@@ -91,8 +95,8 @@
             margin: 2em 0;
             border: 10px solid #FFF;
             width: clamp(
-                400px,
-                90vw,
+                300px,
+                85vw,
                 1000px
             );
             border-radius: 1em;

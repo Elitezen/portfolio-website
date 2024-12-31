@@ -1,5 +1,7 @@
 @use "../../styles/functions";
 
+$screen-width-breakpoint: 950px;
+
 footer {
     border-top: 1px solid #ffffff54;
 
@@ -30,6 +32,21 @@ footer {
             color: #FFF;
             margin: 1.25em 0 0 0;
             padding: 0.5em 1em;
+        }
+    }
+}
+
+
+@media screen and (max-width:$screen-width-breakpoint) {
+    footer {
+        .content {
+            font-size: functions.font-size("base") + 0.1rem;
+            padding: 1.5em;
+            font-weight: 500;
+
+            h4 {
+                font-weight: 600;
+            }
         }
     }
 }

@@ -13,6 +13,16 @@ $screen-width-breakpoint: 950px;
     .highlightedProjects {
         h1 {
             text-align: center;
+            line-height: 1;
+            font-size: clamp(
+                functions.font-size("xl"),
+                8vw,
+                functions.font-size("xxl")
+            ) !important;
+        }
+
+        .projectCards {
+            @include mixins.flex(column, center, space-between);
         }
     }
 }
