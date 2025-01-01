@@ -24,7 +24,7 @@ $screen-width-breakpoint: 900px;
         }
 
         .heading {
-            line-height: 1.15;
+            line-height: 1.5;
             
             h1 {
                 font-size: functions.font-size("hero") - 0.5rem;
@@ -42,9 +42,21 @@ $screen-width-breakpoint: 900px;
                 font-size: functions.font-size("lg") + 0.25rem;
                 font-weight: 500;
                 max-width: 70ch;
+                margin-top: 0.5em;
 
                 span {
                     font-weight: bolder;
+                }
+
+                &.caption {
+                    font-size: functions.font-size("sm");
+                    margin-top: 3em;
+
+                    a {
+                        color: #FFF;
+                        text-decoration: underline;
+                        text-underline-offset: 0.25em;
+                    }
                 }
             }
         }
@@ -139,8 +151,8 @@ $screen-width-breakpoint: 900px;
 
             .descriptionWrapper {
                 p {
-                    line-height: 1.5;
-                    font-size: functions.font-size("base") + 0.2rem;
+                    line-height: 1.6;
+                    font-size: functions.font-size("base") + 0.3rem;
                     font-weight: 500;
                     max-width: 60ch;
     

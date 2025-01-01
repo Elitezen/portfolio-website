@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import styles from "./index.module.scss";
 
 const validateEmail = (email:string) => {
@@ -13,18 +13,27 @@ function ContactForm() {
     const [message, setMessage] = useState<string>("");
     const [notice, setNotice] = useState<string>("")
     const [isValid, setIsValid] = useState<boolean>(false);
+    const submitButtonRef = useRef<HTMLButtonElement | null>(null);
 
     const handleSubmit = (e:any) => {
         e.preventDefault();
         if (validateEmail(email)) {
-          setIsValid(true);
-          setNotice("Sending...");
-          sendEmail();
+            setButtonDisabled(true);
+            setIsValid(true);
+            setNotice("Sending...");
+            sendEmail();
         } else {
-          setIsValid(false);
-          setNotice("Please enter a valid email address.");
+            setIsValid(false);
+            setNotice("Please enter a valid email address.");
         }
     };
+
+    const setButtonDisabled = (disabled: boolean) => {
+        if (!submitButtonRef.current) return;
+
+        submitButtonRef.current.disabled = disabled;
+        submitButtonRef.current.style.opacity = disabled ? "0.5" : "1";
+    }
 
     const sendEmail = async() => {
         try {
@@ -50,6 +59,8 @@ function ContactForm() {
             }
         } catch (err) {
             console.error(err);
+        } finally {
+            setButtonDisabled(false);
         }
     }
 
@@ -89,11 +100,12 @@ function ContactForm() {
 
                 <p style={{
                     opacity: notice.length ? 1 : 0,
-                    color: isValid ? '#FFF' : '#F00'
+                    color: isValid ? '#000' : '#F00'
                 }}>{notice}</p>
 
                 <button
-                    type="submit">
+                    type="submit"
+                    ref={submitButtonRef as any}>
                     Submit
                 </button>
             </form>

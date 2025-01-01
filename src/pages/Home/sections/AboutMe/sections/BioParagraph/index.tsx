@@ -9,7 +9,7 @@ function BioParagraph() {
 
             <div className={styles.paragraphAndGraphic}>
                 <div className={styles.paragraph}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quia vel at amet placeat accusamus quidem fugiat dolorem reiciendis cupiditate architecto magni sequi voluptatum impedit voluptatem iusto, modi voluptate tenetur qui dignissimos sunt veniam. Dignissimos aperiam explicabo nemo hic eligendi?
+                    <p>Hello, I'm Alejandro, a passionate front-end web developer with back-end and production experience. I started tinkering with web development at the age of 13, and have since been actively learning and pushing my limits when it comes to designing and creating software. Today, I hold a degree in computer science (...)</p>
                 </div>
 
                 <div className={styles.graphic}>

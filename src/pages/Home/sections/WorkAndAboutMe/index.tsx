@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import styles from "./index.module.scss";
 import MyWork from "../MyWork";
 import AboutMe from "../AboutMe";
@@ -9,10 +9,18 @@ enum TabName {
 }
 
 function WorkAndAboutMe() {
+    const contentWrapperRef = useRef<HTMLElement | null>(null);
+    // const [height, setHeight] = useState<number | "auto">("auto");
     const [selectedTab, setSelectedTab] = useState<TabName>(TabName.MyWork);
 
     const switchStyle = (tabName: TabName) => selectedTab === tabName ? styles.selected : undefined;
     const getSquarePosition = () => selectedTab === TabName.MyWork ? "translateX(0)" : "translateX(100%)";
+
+    // useEffect(() => {
+    //     if (contentWrapperRef.current) {
+    //       setHeight(contentWrapperRef.current.scrollHeight);
+    //     }
+    //   }, [selectedTab]);
 
     const handleButtonClick = (tabName: TabName) => {
         if (tabName === selectedTab) return;
@@ -47,9 +55,9 @@ function WorkAndAboutMe() {
                         </ul>
                     </nav>
                 </div>
-                <div className={styles.innerPageWrapper}>
-                    <MyWork visible={selectedTab === TabName.MyWork}/>
-                    <AboutMe visible={selectedTab === TabName.AboutMe}/>
+                <div className={styles.innerPageWrapper} ref={contentWrapperRef as any}>
+                    {selectedTab === TabName.MyWork && <MyWork visible />}
+                    {selectedTab === TabName.AboutMe && <AboutMe visible />}
                 </div>
             </div>
         </section>

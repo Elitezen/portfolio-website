@@ -23,15 +23,15 @@ const SideNav = forwardRef((_, ref) => {
                 <div className={styles.links}>
                     <ul>
                         <li>
-                            <Link to="#">Link Here</Link>
+                            <Link to="/">Home</Link>
                         </li>
 
                         <li>
-                            <Link to="#">Link Here</Link>
+                            <Link to="#">Projects</Link>
                         </li>
 
                         <li>
-                            <Link to="#">Link Here</Link>
+                            <Link to="#">About</Link>
                         </li>
                     </ul>
                 </div>

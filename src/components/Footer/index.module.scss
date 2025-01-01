@@ -32,6 +32,8 @@ footer {
             color: #FFF;
             margin: 1.25em 0 0 0;
             padding: 0.5em 1em;
+            font-weight: 500;
+            font-size: functions.font-size("base") + 0.1rem;
         }
     }
 }
@@ -42,10 +44,13 @@ footer {
         .content {
             font-size: functions.font-size("base") + 0.1rem;
             padding: 1.5em;
-            font-weight: 500;
 
             h4 {
                 font-weight: 600;
+            }
+
+            .button {
+                font-size: functions.font-size("base");
             }
         }
     }

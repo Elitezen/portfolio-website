@@ -1,0 +1,25 @@
+@use "../../styles/mixins";
+@use "../../styles/functions";
+
+.contact {
+    background-color: #FFF;
+    color: #000;
+    height: 100vh;
+
+    .content {
+        @include mixins.flex(column);
+        padding: 3em 0;
+
+        h1 {
+            font-size: functions.font-size("xl");
+        }
+
+        p {
+            a {
+                color: #000;
+                text-decoration: underline;
+                text-underline-offset: 0.2em;
+            }
+        }
+    }
+}

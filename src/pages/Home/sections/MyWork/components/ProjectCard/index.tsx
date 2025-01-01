@@ -12,10 +12,11 @@ interface ProjectCardOptions {
     bulletPoints: [string, string] | [string, string, string];
     technologies: string[];
     link: string;
+    pageURL: string;
 }
 
 function ProjectCard({
-    imgSrc, title, subTitle, description, bulletPoints, technologies, link
+    imgSrc, title, subTitle, description, bulletPoints, technologies, link, pageURL
 }: ProjectCardOptions) {
     return (
         <article className={styles.projectCard}>
@@ -58,9 +59,9 @@ function ProjectCard({
                             <img src={RightArrowIcon} alt="Right Arrow" />
                         </Link>
 
-                        <a href="#">
-                            <p>Visit Site</p>
-                            <img src={OpenLinkIcon} alt="Right Arrow" />
+                        <a href={pageURL} target="_blank">
+                            <p>Live Site</p>
+                            <img src={OpenLinkIcon} alt="Open Link" />
                         </a>
                     </div>
                 </div>

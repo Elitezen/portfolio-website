@@ -55,7 +55,7 @@ function Header() {
                                 <nav>
                                     <ul>
                                         <li>
-                                            <Link to="#">Home</Link>
+                                            <Link to="/">Home</Link>
                                         </li>
 
                                         <li>
@@ -70,9 +70,9 @@ function Header() {
                             </div>
 
                             <div className={styles.buttonContainer}>
-                                <a href="#">
+                                <Link to="contact">
                                     Contact Me
-                                </a>
+                                </Link>
                             </div>
                         </>
                     ) : (

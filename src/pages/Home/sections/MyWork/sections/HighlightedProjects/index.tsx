@@ -15,45 +15,49 @@ function HighlightedProjects() {
                     imgSrc={ScriptlyStudiosCover}
                     title="Scriptly Studios"
                     subTitle="Full-Stack Developer | Freelancer"
-                    description="Developed the official website, moderation system, and a promotional code system which successfully served 15,000 codes"
+                    description="Includes multiple projects: Developed the official website, community moderation system, and a promotional voucher code system which successfully served codes to 15,000 users."
                     technologies={[
                         "React", "SCSS", "NodeJS", "TypeScript", "Express API", "MongoDB", "Lua"
                     ]}
                     bulletPoints={[
-                        "Designed and developed a webpage visited by hundreds.",
-                        "Produced tools used to moderate a Discord server of 18,000 users.",
-                        "Developed and deployed a promotional code API and database that served 15,000 players with a %100 uptime."
+                        "Designed and developed a dynamic webpage fit to appeal to gamers.",
+                        "Built robust moderation tools for a community server with over 18,000 members, contributing to community management and maintaining a safe, organized environment.",
+                        "Engineered and deployed a highly reliable promotional code API and database, serving 15,000 players with 100% uptime."
                     ]}
-                    link="scriptly-studios"/>
+                    link="scriptly-studios"
+                    pageURL="https://www.scriptlystudios.com/"/>
 
                 <ProjectCard 
                     imgSrc={KanaFlowCover}
                     title="KanaFlow"
                     subTitle="Front-End Developer | App Developer"
-                    description="A mobile app for practicing Japanese Kana memorization. Complemented by a webpage."
+                    description="An IOS mobile app for mastering Japanese Kana memorization for new learners. Complemented by a webpage simple yet sleek webpage."
                     technologies={[
                         "React Native", "TypeScript", "NodeJS", "React", "SCSS"
                     ]}
                     bulletPoints={[
-                        "Developed a responsive and clean UI for phone and tablets.",
-                        "Designed a clean and modern webpage."
+                        "Developed a responsive and clean UI adaptable for phone and tablets.",
+                        "Effectively demonstrated the app's featureset in a simple and clean webpage."
                     ]
                     }
-                    link="/kanaflow"/>
+                    link="/kanaflow"
+                    pageURL="https://www.kanaflowapp.com/"/>
 
                 <ProjectCard 
                     imgSrc={ExpressiaCover}
                     title="Expressia"
                     subTitle="Full-Stack Developer"
-                    description="An innovative Discord bot for browsing and importing emojis within Discord."
+                    description="An innovative Discord bot enabling seamless browsing and importing of emojis directly within Discord, complemented by powerful utility features."
                     technologies={[
                         "NodeJS", "TypeScript", "React", "SCSS"
                     ]}
                     bulletPoints={[
-                        "Used in +800 Discord servers",
-                        "Serving +85,000 users"
+                        "Surpassed 1,000 lifetime invites.",
+                        "Serving +85,000 users around the world.",
+                        "Created a colorful and bubbly webpage to complement the app's theming"
                     ]}
-                    link="expressia"/>
+                    link="expressia"
+                    pageURL="https://www.expressiabot.com/"/>
             </div>
         </section>
     )

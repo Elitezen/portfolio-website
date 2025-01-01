@@ -81,7 +81,7 @@ $screen-width-breakpoint: 950px;
                         align-items: flex-start; // Align bullet with the first line
                         gap: 0.5em; // Space between the bullet and the text
                         padding-left: 0; // Remove extra padding
-                        margin: 0.5em 0;
+                        margin: 1em 0;
 
                         &::before {
                             content: '';
@@ -108,7 +108,7 @@ $screen-width-breakpoint: 950px;
                     background-color: functions.color("primary");
                     color: #FFF;
                     font-weight: 600;
-                    padding: 0.35em 0.95em;
+                    padding: 0.35em 1.1em;
                     font-size: functions.font-size("sm");
                     
                 }

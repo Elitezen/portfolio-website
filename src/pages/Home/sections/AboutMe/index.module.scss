@@ -5,11 +5,6 @@
 $screen-width-breakpoint: 915px;
 
 .aboutMe {
-    @include mixins.inner-page();
-    position: absolute;
-    top: 0;
-    height: min-content;
-
     .content {
         padding: 4vw;
 
