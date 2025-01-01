@@ -5,7 +5,6 @@ import projectPageStyles from "../(components)/ProjectPage/index.module.scss";
 import KanaFlowSite from "../../assets/images/screenshots/kanaflow.png"
 import type { Tech } from "../../(typings)/interfaces";
 
-import ReactNativeIcon from "../../assets/images/icons/react-native.svg";
 import TypeScriptIcon from "../../assets/images/icons/typescript.svg";
 import NodeJsIcon from "../../assets/images/icons/nodejs.svg";
 import ReactIcon from "../../assets/images/icons/react.svg";
