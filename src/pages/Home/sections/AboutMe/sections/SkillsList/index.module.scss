@@ -3,6 +3,7 @@
 
 .skillsList {
     margin-top: 5em;
+    width: 100%;
 
     .grid {
         margin-top: 5em;
@@ -11,8 +12,7 @@
         gap: 2rem;
         justify-items: center;
         align-items: center;
-        width: 90%;
-        max-width: 800px;
+        width: 100%;
         margin: 5em auto 0 auto;
 
         .skillCard {

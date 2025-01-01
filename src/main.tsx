@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import ScriptlyStudios from "./pages/ScriptlyStudios";
 import KanaFlow from "./pages/KanaFlow";
+import Expressia from "./pages/Expressia";
 
 const router = createBrowserRouter([
 	{
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
 	{
 		path: "kanaflow",
 		element: <KanaFlow />
+	},
+	{
+		path: "expressia",
+		element: <Expressia />
 	}
 ]);
 

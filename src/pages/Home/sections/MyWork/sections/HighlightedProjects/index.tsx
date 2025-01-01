@@ -3,6 +3,7 @@ import styles from "./index.module.scss";
 
 import KanaFlowCover from "../../../../../../assets/images/covers/kana-flow.png";
 import ScriptlyStudiosCover from "../../../../../../assets/images/covers/scriptly-studios.png";
+import ExpressiaCover from "../../../../../../assets/images/covers/expressia.png";
 
 function HighlightedProjects() {
     return (
@@ -35,14 +36,13 @@ function HighlightedProjects() {
                     ]}
                     bulletPoints={[
                         "Developed a responsive and clean UI for phone and tablets.",
-                        "Designed a clean and modern webpage.",
-                        "Surpassed ### downloads."
+                        "Designed a clean and modern webpage."
                     ]
                     }
                     link="/kanaflow"/>
 
                 <ProjectCard 
-                    imgSrc={KanaFlowCover}
+                    imgSrc={ExpressiaCover}
                     title="Expressia"
                     subTitle="Full-Stack Developer"
                     description="An innovative Discord bot for browsing and importing emojis within Discord."
@@ -50,8 +50,8 @@ function HighlightedProjects() {
                         "NodeJS", "TypeScript", "React", "SCSS"
                     ]}
                     bulletPoints={[
-                        "Reached XXXX server invites",
-                        "Serving XXXXXX users"
+                        "Used in +800 Discord servers",
+                        "Serving +85,000 users"
                     ]}
                     link="expressia"/>
             </div>
