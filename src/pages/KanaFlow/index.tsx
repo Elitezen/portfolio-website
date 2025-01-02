@@ -70,6 +70,15 @@ function KanaFlow() {
                         <p>
                             Before creating KanaFlow, I had minimal experience with React Native. This was a build-as-you-learn project, as many other works in development have been for me.
                         </p>
+
+                        <section>
+                            <h3>Acomplishments</h3>
+
+                            <ul className={projectPageStyles.list}>
+                                <li>Designed and developed a dynamic React Native app with a clean and easy-to-follow UI.</li>
+                                <li>Approved by the Apple Appstore.</li>
+                            </ul>
+                        </section>
                     
                         <section>
                             <h3>Challenges Faced</h3>
@@ -93,7 +102,7 @@ function KanaFlow() {
                     <section>
                         <h2>1. Web Development</h2>
                         <p>
-                            I designed a simple webpage not only to showcase the app, but to also contain a support page and privacy policy required by the Apple Appstore
+                            I designed a simple webpage not only to showcase the app, but to also contain a support page and privacy policy required by the Apple Appstore. This site is my favorite so far, as it challenged me to design a simple yet appealing landing page.
                         </p>
                     </section>
                 </ProjectPage>

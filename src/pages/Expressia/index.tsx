@@ -2,7 +2,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import ProjectPage from "../(components)/ProjectPage";
 import projectPageStyles from "../(components)/ProjectPage/index.module.scss";
-import KanaFlowSite from "../../assets/images/screenshots/kanaflow.png"
+import ExpressiaGraphic from "../../assets/images/screenshots/expressia.png";
 import type { Tech } from "../../(typings)/interfaces";
 
 import TypeScriptIcon from "../../assets/images/icons/typescript.svg";
@@ -26,7 +26,7 @@ function Expressia() {
 
                     <img 
                         className={projectPageStyles.coverImage}
-                        src={KanaFlowSite} 
+                        src={ExpressiaGraphic} 
                         alt="Scriplty Studios Website" />
                     
                     <section>
@@ -61,6 +61,41 @@ function Expressia() {
                                 </ul>
                             </section>
                         </div>
+                    </section>
+
+                    <section>
+                        <h2>1. Bot Development</h2>
+                        <p>
+                            Creating Expressia was a journey of challenges. From sourcing assets, developing a built-in browser from using only images and buttons, to getting verification from Discord.
+                        </p>
+
+                        <section>
+                            <h3>Acomplishments</h3>
+
+                            <ul className={projectPageStyles.list}>
+                                <li>Created an innovative built-in Discord bot browser.</li>
+                                <li>Sourced over 25,000 image assets with metadata.</li>
+                                <li>Received verification status by Discord.</li>
+                            </ul>
+                        </section>
+                    
+                        <section>
+                            <h3>Challenges Faced</h3>
+
+                            <ol className={`${projectPageStyles.list} ${projectPageStyles.cyclicList}`}>
+                                <li>
+                                    <h4>Enabling Browsing of 25,000 Assets Within Discord</h4>
+                                    <p>
+                                        I needed to be able to provide users with an easy way to search for emojis, stickers, and profile pictures. Basic Discord bot browsers use simple pagination to move between 1 element at a time, and more advanced ones either provided a list per page. This would not work for my case, for I needed users to be able to see many images up close and in HD for a proper browsing experience. I did not want to implement a proper webpage, for I believed part of the magic of Expressia would be being able to fully use it all within Discord. 
+                                    </p>
+
+                                    <h5>Solution</h5>
+                                    <p>
+                                        I leveraged the power of node-canvas and Discord bot buttons to create a sudo browser. I created a dynamic canvas layout that house show up to 10 emojis per page. Users could use simple navigation buttons to browse emojis 10 at a time, and use number buttons to focus in on one emoji similar to a mouse click. Focusing in on an emoji would create a separate UI that would show a larger image of the emoji with it's metadata, as well as buttons to import it.
+                                    </p>
+                                </li>
+                            </ol>
+                        </section>
                     </section>
                 </ProjectPage>
             <Footer />

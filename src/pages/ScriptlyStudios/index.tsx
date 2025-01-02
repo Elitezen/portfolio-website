@@ -69,14 +69,16 @@ function ScriptlyStudios() {
                     </section>
 
                     <section>
-                        <h2>1. API Developer for Flag Wars x Freshcut Collaboration Event</h2>
-                        <p>In February 2023, Scriptly Studios partnered with the social media platform FreshCut for a promotional event in their game, Flag Wars. I was tasked with creating a system to manage the redemption of 15,000 unique in-game promotional codes. My work included importing an Excel spreadsheet of codes and metadata into a MongoDB database, developing an API for managing code entries, and integrating the API into Flag Wars to handle redemptions. The promotion was a massive success, with my API achieving 100% uptime and error-free performance throughout the event.</p>
+                        <h2>1. Flag Wars x Freshcut Collaboration Event</h2>
+                        <p>In February 2023, Scriptly Studios partnered with the social media platform FreshCut for a promotional event in Flag Wars. I was tasked with creating a system to manage the redemption of 15,000 unique in-game promotional codes. My work included managing and populating a MongoDB database, developing an API for managing code entries, and integrating the API into Flag Wars to handle redemptions. The promotion was a massive success, with my API achieving 100% uptime and error-free performance throughout the event.</p>
                     
                         <section>
                             <h3>Acomplishments</h3>
 
                             <ul className={projectPageStyles.list}>
-                                <li>Developed and deployed a production API with no errors.</li>
+                                <li>Imported 15,000 promotional code vouchers into MongoDB along with fields for metadata.</li>
+                                <li>Developed and deployed a secure production API with no errors.</li>
+                                <li>Implemented API access into the game to enable users to redeem codes.</li>
                             </ul>
                         </section>
 
@@ -92,7 +94,7 @@ function ScriptlyStudios() {
 
                                     <h5>Solution</h5>
                                     <p>
-                                        I implemented a synchronous queue system in the API to handle requests sequentially. Each request was placed in a queue and processed one at a time, ensuring the current request was fully completed before proceeding to the next. This effectively eliminated the possibility of duplicate code redemptions.
+                                    This project was my first experience developing a production API. I collaborated with Scriptly Studios' developers and FreshCut's management to meet their requirements. The high stakes of delivering a reliable system for tens of thousands of players fostered strong self-discipline. I gained skills in API security (IP whitelisting, rate limiting, secret keys), error handling, and ensuring proper responses for all requests.
                                     </p>
                                 </li>
                             </ol>
@@ -117,8 +119,8 @@ function ScriptlyStudios() {
                             <h3>Acomplishments</h3>
 
                             <ul className={projectPageStyles.list}>
-                                <li>Desgined a stylized webpage fitting for Scriptly Studios' theming and games</li>
-                                <li>Implemented effect SEO practices to place the webpage at the top of search results for "Scriptly Studios"</li>
+                                <li>Desgined a stylized webpage fitting for Scriptly Studios' theming and games.</li>
+                                <li>Implemented SEO practices to place the webpage at the top of search results for "Scriptly Studios."</li>
                             </ul>
                         </section>
                     </section>
@@ -133,9 +135,27 @@ function ScriptlyStudios() {
                             <h3>Acomplishments</h3>
 
                             <ul className={projectPageStyles.list}>
-                                <li>Worked alongside the Community Manager to design the new system</li>
+                                <li>Worked alongside the Community Manager to design the new moderation system.</li>
                                 <li>Developed and deployed an advanced and versitile moderation system</li>
                             </ul>
+                        </section>
+
+                        <section>
+                            <h3>Challenges Faced</h3>
+
+                            <ol className={`${projectPageStyles.list} ${projectPageStyles.cyclicList}`}>
+                                <li>
+                                    <h4>Maintaining a Rapidly Growing and Complex Codebase</h4>
+                                    <p>
+                                    The Scriptly Bot codebase is among the largest I have ever managed. While I initially developed the first two versions, the community manager's growing requests for new features, command overhauls, and entirely new systems gradually expanded the codebase in an unstructured way. Over time, the lack of organization made it increasingly difficult to navigate, eventually hindering my ability to focus on programming as I struggled to decipher my own code.
+                                    </p>
+
+                                    <h5>Solution</h5>
+                                    <p>
+                                    The two major updates to the codebase involved extensive refactoring, creating reusable components and functions, and restructuring database schemas to accommodate new requirements. Alongside these refactors, I researched best practices for organizing the directory structure, aiming to design a layout that was logical, easy to navigate, and streamlined for future development.
+                                    </p>
+                                </li>
+                            </ol>
                         </section>
                     </section>
                 </ProjectPage>

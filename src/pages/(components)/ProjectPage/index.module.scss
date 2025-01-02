@@ -65,9 +65,10 @@
 
         .techStack {
             @include mixins.flex(row, center, flex-start);
-            gap: 4em;
+            gap: 2em;
             flex-wrap: wrap;
             margin-top: 2em;
+            margin-left: -1.25em;
 
             list-style: none;
 
@@ -100,6 +101,24 @@
             );
             border-radius: 1em;
             box-shadow: 0px 5px 10px 1px rgb(235, 235, 235);
+        }
+    }
+
+    .returnLink {
+        color: #000;
+        font-weight: 600;
+        text-decoration: underline;
+        position: relative;
+        left: 1.5em;
+
+        &.top {
+            position: relative;
+            top: 1.5em;
+            left: 1.5em;
+        }
+
+        &.bottom {
+            bottom: 1.5em;
         }
     }
 }
