@@ -7,7 +7,7 @@ function Footer() {
             <div className={styles.content}>
                 <h4>Want to join the voyage? Feel free to <span>reach out</span></h4>
 
-                <Link className={styles.button} to="contact">
+                <Link className={styles.button} to="/contact">
                     Contact Me
                 </Link>
             </div>
