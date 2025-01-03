@@ -1,12 +1,4 @@
 {
-    "functions": {
-        "api/send-email.ts": {
-            "runtime": "nodejs16.x"
-        }
-    },
-    "routes": [
-        { "src": "/api/send-email", "dest": "/api/send-email.ts" }
-    ],
     "rewrites": [
         {"source": "/(.*)", "destination": "/"}
     ]
