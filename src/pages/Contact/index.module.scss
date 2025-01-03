@@ -4,11 +4,11 @@
 .contact {
     background-color: #FFF;
     color: #000;
-    height: 100vh;
 
     .content {
         @include mixins.flex(column);
-        padding: 3em 0;
+        padding: 2em 0 0vw 0;
+        text-align: center;
 
         h1 {
             font-size: functions.font-size("xl");
