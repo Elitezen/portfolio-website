@@ -46,7 +46,7 @@ async function verifyCaptcha(token:string) {
         const res = await fetch(`https://www.google.com/recaptcha/api/siteverify`, {
             method: "POST",
             headers: {
-                "Content-Type": "application/json",
+                "Content-Type": "application/x-www-form-urlencoded",
             },
             body: new URLSearchParams({
                 secret: process.env["RECAPTCHA_SECRET_KEY"]!,
@@ -55,7 +55,6 @@ async function verifyCaptcha(token:string) {
         });
 
         const resJSON = (await res.json()) as { success:boolean };
-        
         if (!resJSON.success) {
             throw "Failed to verify captcha";
         }

@@ -23,7 +23,6 @@ function ContactForm() {
 
     const handleCaptchaChange = (value:string | null) => {
         setCaptchaValue(value);
-        console.log("CAPTCHA Value:", value);
     };
 
     const handleSubmit = (e:any) => {
@@ -63,7 +62,7 @@ function ContactForm() {
                     email,
                     subject,
                     message,
-                    "g-captcha-response": captchaValue
+                    'g-recaptcha-response': captchaValue
                 })
             });
 
