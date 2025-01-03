@@ -53,7 +53,7 @@ function ContactForm() {
     const sendEmail = async() => {
         try {
             const res = await fetch("http://localhost:3000/api/send-email", {
-                method: "GET",
+                method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
