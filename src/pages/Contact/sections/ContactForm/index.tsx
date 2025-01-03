@@ -52,7 +52,7 @@ function ContactForm() {
 
     const sendEmail = async() => {
         try {
-            const res = await fetch("http://localhost:3000/send-email", {
+            const res = await fetch("http://localhost:3000/api/send-email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
