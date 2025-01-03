@@ -52,7 +52,7 @@ function ContactForm() {
 
     const sendEmail = async() => {
         try {
-            const res = await fetch("https://elitezen.dev/api/send-email", {
+            const res = await fetch("https://www.elitezen.dev/api/send-email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
