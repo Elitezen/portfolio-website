@@ -1,6 +1,10 @@
 import { useRef, useState } from "react";
 import styles from "./index.module.scss";
 
+import ReCAPTCHA from 'react-google-recaptcha';
+
+const captchaSiteKey = "6LdosqwqAAAAAE2RkmDkHikzXuw86Y6_1yYUImrY";
+
 const validateEmail = (email:string) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
@@ -15,8 +19,20 @@ function ContactForm() {
     const [isValid, setIsValid] = useState<boolean>(false);
     const submitButtonRef = useRef<HTMLButtonElement | null>(null);
 
+    const [captchaValue, setCaptchaValue] = useState<string | null>(null);
+
+    const handleCaptchaChange = (value:string | null) => {
+        setCaptchaValue(value);
+        console.log("CAPTCHA Value:", value);
+    };
+
     const handleSubmit = (e:any) => {
         e.preventDefault();
+        if (!captchaValue) {
+            setNotice("Please complete the CAPTCHA");
+            return
+        }
+
         if (validateEmail(email)) {
             setButtonDisabled(true);
             setIsValid(true);
@@ -46,7 +62,8 @@ function ContactForm() {
                     name,
                     email,
                     subject,
-                    message
+                    message,
+                    "g-captcha-response": captchaValue
                 })
             });
 
@@ -55,7 +72,7 @@ function ContactForm() {
                 setNotice("Your message has been successfully sent!");
             } else {
                 setIsValid(false);
-                setNotice("An unknown error occured. Please try again later.");
+                setNotice("An unknown error occured. Please try again later or email me manually at dev.elitezen@gmail.com");
             }
         } catch (err) {
             console.error(err);
@@ -102,6 +119,14 @@ function ContactForm() {
                     opacity: notice.length ? 1 : 0,
                     color: isValid ? '#000' : '#F00'
                 }}>{notice}</p>
+
+                <ReCAPTCHA
+                    style={{
+                        marginBottom: "1em"
+                    }}
+                    sitekey={captchaSiteKey}
+                    onChange={handleCaptchaChange}
+                    />
 
                 <button
                     type="submit"
