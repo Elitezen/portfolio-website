@@ -7,7 +7,7 @@ import WorkAndAboutMe from './sections/WorkAndAboutMe';
 function Home() {
     return (
         <main>
-            <Header />
+            <Header alwaysOpaque={false}/>
             <Hero />
             <WorkAndAboutMe />
             <SpaceBackground />

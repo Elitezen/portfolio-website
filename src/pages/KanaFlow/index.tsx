@@ -22,7 +22,7 @@ const techs: Tech[] = [
 function KanaFlow() {
     return (
         <main>
-            <Header />
+            <Header/>
                 <ProjectPage>
                     <h1>KanaFlow - From a Personal Learning Tool to a Public iOS App</h1>
 

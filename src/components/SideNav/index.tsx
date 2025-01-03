@@ -27,11 +27,7 @@ const SideNav = forwardRef((_, ref) => {
                         </li>
 
                         <li>
-                            <Link to="#">Projects</Link>
-                        </li>
-
-                        <li>
-                            <Link to="#">About</Link>
+                            <Link to="#">Resume</Link>
                         </li>
 
                         <li>

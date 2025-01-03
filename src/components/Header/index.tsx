@@ -11,36 +11,41 @@ import SideNav from "../SideNav";
 const SCROLL_Y_BREAKPOINT = 50;
 const SCREEN_WIDTH_BREAKPOINT = 1_000;
 
-function Header() {
+function Header({
+    alwaysOpaque
+}: {
+    alwaysOpaque?: boolean
+}) {
+    if (alwaysOpaque === undefined) alwaysOpaque = true;
+    
     const screenWidth = useWindowWidth();
     const sideNavRef = useRef<HTMLElement>(null);
-    const header = document.querySelector("header") as HTMLElement | null;
-
     const [scrollY, setScrollY] = useState<number>(window.scrollY);
+
     const handleScroll = () => {
         setScrollY(window.scrollY);
-    }
-
-    if (header) {
-        header.style.backgroundColor = `rgba(0, 0, 0, ${scrollY > SCROLL_Y_BREAKPOINT ? 1 : 0})`
-    }
-
-    const handleSideNavOpen = () => {
-        if (!sideNavRef.current) return;
-
-        sideNavRef.current.style.right = "0";
-    }
+    };
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
 
         return () => {
             window.removeEventListener("scroll", handleScroll);
-        }
+        };
     }, []);
 
+    const headerStyle = {
+        backgroundColor: `rgba(0, 0, 0, ${scrollY > SCROLL_Y_BREAKPOINT || alwaysOpaque ? 1 : 0})`,
+    };
+
+    const handleSideNavOpen = () => {
+        if (!sideNavRef.current) return;
+
+        sideNavRef.current.style.right = "0";
+    };
+
     return (
-        <header>
+        <header style={headerStyle}>
             <div className={styles.content}>
                 <Link to="/" className={styles.titleContainer}>
                     <img src={ElitezenIcon} alt="Elitezen" />
@@ -85,7 +90,7 @@ function Header() {
 
             <SideNav ref={sideNavRef} />
         </header>
-    )
+    );
 }
 
 export default Header;
