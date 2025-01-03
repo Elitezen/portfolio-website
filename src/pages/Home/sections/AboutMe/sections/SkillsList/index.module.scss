@@ -1,35 +1,48 @@
 @use "../../../../../../styles/mixins";
-@use "../../../../../../styles/functions";
+
+$screen-width-breakpoint: 900px;
 
 .skillsList {
     margin-top: 5em;
     width: 100%;
 
-    .grid {
-        margin-top: 5em;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
-        justify-items: center;
-        align-items: center;
-        width: 100%;
+    .content{
+        @include mixins.flex(row, center, center);
+        flex-wrap: wrap;
+        gap: 6rem;
         margin: 5em auto 0 auto;
+        max-width: 900px;
 
         .skillCard {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
+            @include mixins.flex(column, center, center);
+            @include mixins.square-element(4em);
 
             .icon {
-                width: 50px;
-                height: 50px;
-                margin-bottom: 0.5rem;
+                @include mixins.square-element(3.5em);
+
                 opacity: 0.9;
             }
 
             p {
-                margin-top: 0.5em;
+                white-space: nowrap;
+                text-align: center;
+                margin-top: 1em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $screen-width-breakpoint) {
+    .skillsList {
+        .content {
+            gap: 6em;
+
+            .skillCard {
+                @include mixins.square-element(1.5em);
+
+                .icon {
+                    @include mixins.square-element(2.5em);
+                }
             }
         }
     }

@@ -15,14 +15,14 @@ function HighlightedProjects() {
                     imgSrc={ScriptlyStudiosCover}
                     title="Scriptly Studios"
                     subTitle="Full-Stack Developer | Freelancer"
-                    description="Includes multiple projects: Developed the official website, community moderation system, and a promotional voucher code system which successfully served codes to 15,000 users."
+                    description="I have worked on three projects for Scriptly Studios: Developed the official website, a community moderation system which helps manage +18,000 users, and a promotional voucher code system which successfully served codes to 15,000 gamers!"
                     technologies={[
                         "React", "SCSS", "NodeJS", "TypeScript", "Express API", "MongoDB", "Lua"
                     ]}
                     bulletPoints={[
-                        "Designed and developed a dynamic webpage fit to appeal to gamers.",
-                        "Built robust moderation tools for a community server with over 18,000 members, contributing to community management and maintaining a safe, organized environment.",
-                        "Engineered and deployed a highly reliable promotional code API and database, serving 15,000 players with 100% uptime."
+                        "Mobile responsive React web development.",
+                        "Working along side the community manager to design and develop a NodeJS moderation system.",
+                        "Engineered and deployed a highly reliable promotional code Express API and MongoDB database, serving 15,000 players with 100% uptime."
                     ]}
                     link="scriptly-studios"
                     pageURL="https://www.scriptlystudios.com/"/>
@@ -36,8 +36,9 @@ function HighlightedProjects() {
                         "React Native", "TypeScript", "NodeJS", "React", "SCSS"
                     ]}
                     bulletPoints={[
-                        "Developed a responsive and clean UI adaptable for phone and tablets.",
-                        "Effectively demonstrated the app's featureset in a simple and clean webpage."
+                        "Developed a responsive and clean app UI adaptable for phone and tablets.",
+                        "Effectively demonstrated the app's featureset in a simple and clean webpage.",
+                        "Approved by the Apple Appstore (Woohoo! 🎉)"
                     ]
                     }
                     link="/kanaflow"
@@ -47,7 +48,7 @@ function HighlightedProjects() {
                     imgSrc={ExpressiaCover}
                     title="Expressia"
                     subTitle="Full-Stack Developer"
-                    description="An innovative Discord bot enabling seamless browsing and importing of emojis directly within Discord, complemented by powerful utility features."
+                    description="A personal passion project. A (humbly) innovative Discord bot enabling seamless browsing and importing of 25,000 assets directly within Discord, complemented by powerful utility features. Oh yeah, and I made a website for it, too."
                     technologies={[
                         "NodeJS", "TypeScript", "React", "SCSS"
                     ]}

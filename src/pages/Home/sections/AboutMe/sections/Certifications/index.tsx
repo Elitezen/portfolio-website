@@ -1,4 +1,4 @@
-import styles from "./index.module.scss";
+import styles from "../Experience/index.module.scss";
 
 function Certifications() {
 

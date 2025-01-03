@@ -59,21 +59,21 @@ function Header() {
                                         </li>
 
                                         <li>
-                                            <Link to="#">Projects</Link>
+                                            <Link to="#">Resume</Link>
                                         </li>
 
                                         <li>
-                                            <Link to="#">About</Link>
+                                            <Link to="/contact">Contact</Link>
                                         </li>
                                     </ul>
                                 </nav>
                             </div>
 
-                            <div className={styles.buttonContainer}>
+                            {/* <div className={styles.buttonContainer}>
                                 <Link to="contact">
                                     Contact Me
                                 </Link>
-                            </div>
+                            </div> */}
                         </>
                     ) : (
                         <button onClick={handleSideNavOpen}>

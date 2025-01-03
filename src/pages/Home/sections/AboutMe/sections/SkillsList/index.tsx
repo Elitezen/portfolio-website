@@ -13,7 +13,6 @@ import MongoDbIcon from "../../../../../../assets/images/icons/mongodb.svg";
 import GitIcon from "../../../../../../assets/images/icons/git.svg";
 import GitHubIcon from "../../../../../../assets/images/icons/github.svg";
 
-
 interface SkillEntry {
     name: string;
     icon: string;
@@ -34,14 +33,12 @@ const skills: SkillEntry[] = [
     { name: "GitHub", icon: GitHubIcon },
 ];
 
-
 function SkillsList() {
-
     return (
         <section className={styles.skillsList}>
             <h1>Skillset</h1>
 
-            <div className={styles.grid}>
+            <div className={styles.content}>
                 {skills.map((skill) => (
                     <div key={skill.name} className={styles.skillCard}>
                         <img src={skill.icon} alt={`${skill.name} icon`} className={styles.icon} />
@@ -50,7 +47,7 @@ function SkillsList() {
                 ))}
             </div>
         </section>
-    )
+    );
 }
 
 export default SkillsList;
