@@ -10,3 +10,7 @@
 - Section with lists of services
 - Testimonials Section
 - Read.cv
+
+reinstate env variables
+test simple hello world endpoint in production
+fix 404 for /send-email in production
