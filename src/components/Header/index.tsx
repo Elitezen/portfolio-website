@@ -9,6 +9,7 @@ import menuIcon from "../../assets/images/icons/menu-icon.svg";
 import SideNav from "../SideNav";
 
 import resumePDF from "../../assets/pdf/resume_Elitezen_01-03-2025_public.pdf";
+import scrollToTop from "../../(util)/scrollToTop";
 
 const SCROLL_Y_BREAKPOINT = 50;
 const SCREEN_WIDTH_BREAKPOINT = 1_000;
@@ -49,7 +50,7 @@ function Header({
     return (
         <header style={headerStyle}>
             <div className={styles.content}>
-                <Link to="/" className={styles.titleContainer}>
+                <Link to="/" className={styles.titleContainer} onClick={scrollToTop}>
                     <img src={ElitezenIcon} alt="Elitezen" />
                     <h4>Elitezen</h4>
                 </Link>
@@ -62,7 +63,7 @@ function Header({
                                 <nav>
                                     <ul>
                                         <li>
-                                            <Link to="/">Home</Link>
+                                            <Link to="/" onClick={scrollToTop}>Home</Link>
                                         </li>
 
                                         <li>
@@ -72,14 +73,14 @@ function Header({
                                         </li>
 
                                         <li>
-                                            <Link to="/contact">Contact</Link>
+                                            <Link to="/contact" onClick={scrollToTop}>Contact</Link>
                                         </li>
                                     </ul>
                                 </nav>
                             </div>
 
                             {/* <div className={styles.buttonContainer}>
-                                <Link to="contact">
+                                <Link to="contact"  onClick={scrollToTop}>
                                     Contact Me
                                 </Link>
                             </div> */}

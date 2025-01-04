@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import XIcon from "../../assets/images/icons/x.svg";
 import resumePDF from "../../assets/pdf/resume_Elitezen_01-03-2025_public.pdf";
+import scrollToTop from "../../(util)/scrollToTop";
 
 const SideNav = forwardRef((_, ref) => {
     const handelSideNavClose = () => {
@@ -24,7 +25,7 @@ const SideNav = forwardRef((_, ref) => {
                 <div className={styles.links}>
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link to="/" onClick={scrollToTop}>Home</Link>
                         </li>
 
                         <li>
@@ -34,7 +35,7 @@ const SideNav = forwardRef((_, ref) => {
                         </li>
 
                         <li>
-                            <Link to="/contact">Contact</Link>
+                            <Link to="/contact" onClick={scrollToTop}>Contact</Link>
                         </li>
                     </ul>
                 </div>

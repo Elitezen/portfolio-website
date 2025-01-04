@@ -3,6 +3,7 @@ import styles from "./index.module.scss";
 import RightArrowIcon from "../../../../../../assets/images/icons/arrow-right.svg";
 import OpenLinkIcon from "../../../../../../assets/images/icons/open-link.svg";
 import { Link } from "react-router-dom";
+import scrollToTop from "../../../../../../(util)/scrollToTop";
 
 interface ProjectCardOptions {
     imgSrc: string;
@@ -54,7 +55,7 @@ function ProjectCard({
                     </div>
 
                     <div className={styles.buttonRow}>
-                        <Link to={link}>
+                        <Link to={link} onClick={scrollToTop}>
                             <p>Read More</p>
                             <img src={RightArrowIcon} alt="Right Arrow" />
                         </Link>
