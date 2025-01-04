@@ -1,12 +1,11 @@
 @use "../../../../../../styles/mixins";
 @use "../../../../../../styles/functions";
 
-$screen-width-breakpoint: 950px;
+$screen-width-breakpoint: 1100px;
 
 .projectCard {
     width: 100%;
     position: relative;
-    margin: 6em 0;
 
     .content {
         @include mixins.flex(row, center, center);
@@ -32,15 +31,14 @@ $screen-width-breakpoint: 950px;
 
         .textSide {
             @include mixins.flex(column, flex-start, flex-start);
-            margin-top: 5em;
+            margin: 5em 1em 0 1em;
 
             .textContainer {
                 h2 {
                     white-space: nowrap;
                     text-transform: none;
-                    margin: 0.07em 0;
                     letter-spacing: 1.5px;
-                    font-weight: 500;
+                    font-weight: 600;
                     font-size: clamp(
                         functions.font-size("base") + 0.5rem,
                         7vw,
@@ -60,7 +58,6 @@ $screen-width-breakpoint: 950px;
                 }
     
                 p.description {
-                    color: rgb(169, 169, 169);
                     font-weight: 500;
                     margin: auto;
                     max-width: 60ch;
@@ -97,7 +94,7 @@ $screen-width-breakpoint: 950px;
 
             .technologies {
                 @include mixins.flex(row, center, flex-start);
-                gap: 0.5em;
+                gap: 0.75em;
                 flex-wrap: wrap;
                 padding: 0 0.25em;
                 margin: 2.5em 0;
@@ -108,9 +105,9 @@ $screen-width-breakpoint: 950px;
                     background-color: functions.color("primary");
                     color: #FFF;
                     font-weight: 600;
-                    padding: 0.35em 1.1em;
+                    padding: 0.4em 1.1em;
                     font-size: functions.font-size("sm");
-                    
+                    box-shadow: 0px 4px 3px #000000;
                 }
             }
 
@@ -157,7 +154,16 @@ $screen-width-breakpoint: 950px;
             }
 
             .textSide {
+                width: 100%;
                 margin-top: -2em;
+
+                h2 {
+                    font-size: clamp(
+                        functions.font-size("base"),
+                        11vw,
+                        functions.font-size("xxl")
+                    ) !important;
+                }
             }
         }
     }

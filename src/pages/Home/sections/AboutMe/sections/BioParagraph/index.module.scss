@@ -4,6 +4,14 @@
 $screen-width-breakpoint: 900px;
 
 .bioParagraph {
+    h1 {
+        font-size: clamp(
+                functions.font-size("xl"),
+                7.9vw,
+                functions.font-size("xxl")
+            ) !important;
+    }
+
     .paragraphAndGraphic {
         @include mixins.flex(row, flex-start);
         gap: 1.5em;
@@ -16,13 +24,17 @@ $screen-width-breakpoint: 900px;
         .paragraph {
             line-height: 1.75;
             font-size: functions.font-size("base") + 0.2;
+
+            p {
+                max-width: 700px;
+            }
         }
 
         .graphic {
             text-align: center;
 
             img {
-                width: clamp(300px, 55%, 500px);
+                width: clamp(300px, 65%, 600px);
             }
         }
     }

@@ -12,10 +12,17 @@ $screen-width-breakpoint: 950px;
         padding: 1em 3em;
 
         .containerHeader {
-            @include mixins.flex();
+            @include mixins.flex(); // Ensure this flex mixin doesn't interfere with layout
+            position: sticky;
+            top: 3.5em; // Sticking threshold
+            z-index: 10; // Ensure it remains above content
+            background-color: inherit; // Maintain background color during scroll
             padding: 3em;
 
             nav {
+                background-color: #FFF;
+                padding: 0.2em;
+                box-shadow: 0px 3px 4px #9e9e9e;
                 position: relative; // Ensure the moving square is positioned relative to the nav container
             
                 ul {
@@ -30,9 +37,10 @@ $screen-width-breakpoint: 950px;
                         flex: 1;
             
                         button {
-                            padding: 1em 2em;
+                            padding: 0.75em 1.5em;
                             background-color: transparent;
                             border: none;
+                            font-weight: 500;
                             font-size: functions.font-size("base") + 0.15rem;
                             position: relative; // Ensure button content stays in place
                             white-space: nowrap;

@@ -1,3 +1,4 @@
+@use "../../styles/mixins";
 @use "../../styles/functions";
 
 $screen-width-breakpoint: 950px;
@@ -6,14 +7,19 @@ footer {
     background-color: #000;
 
     .content {
-        font-size: functions.font-size("lg");
-        padding: 2em 3em;
+        @include mixins.flex(row, center, center);
+        gap: 2em;
+        padding: 1.5em 0;
 
         h4 {
+            font-size: clamp(
+                functions.font-size("sm"),
+                2vw,
+                functions.font-size("lg")
+            );
             font-weight: 400;
             
             a {
-                
                 color: #FFF !important;
 
                 span {
@@ -30,10 +36,10 @@ footer {
             text-align: center;
             border: 2px solid #FFF;
             color: #FFF;
-            margin: 1.25em 0 0 0;
             padding: 0.5em 1em;
             font-weight: 500;
             font-size: functions.font-size("base") + 0.1rem;
+            white-space: nowrap;
         }
     }
 }
@@ -43,7 +49,7 @@ footer {
     footer {
         .content {
             font-size: functions.font-size("base") + 0.1rem;
-            padding: 1.5em;
+            padding: 2em 1.75em;
 
             h4 {
                 font-weight: 600;

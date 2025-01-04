@@ -18,9 +18,9 @@ function ProjectPage({
                 { 
                     ...children
                 }
-            </div>
 
-            <ReturnLink type="bottom"/>
+                <ReturnLink type="bottom"/>
+            </div>
         </div>
     )
 }

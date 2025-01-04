@@ -5,6 +5,8 @@ $screen-width-breakpoint: 900px;
 
 .hero {
     @include mixins.flex();
+    min-height: 95vh;
+    margin: 0 !important;
 
     .content {
         color: functions.color("foreground");
@@ -12,19 +14,19 @@ $screen-width-breakpoint: 900px;
         padding: 1.5em 0;
         margin: 2em 5em;
 
-        span.strongGlow {
-            text-shadow: 0 0 5px #fff,     // Core glow
-                        0 0 10px #fff,    // Medium glow
-                        0 0 13px #5d5d5d; // Outer glow 3
-        }
+        // span.strongGlow {
+        //     text-shadow: 0 0 5px #fff,     // Core glow
+        //                 0 0 10px #fff,    // Medium glow
+        //                 0 0 13px #5d5d5d; // Outer glow 3
+        // }
 
-        span.softGlow {
-            text-shadow: 0 0 5px #fff,     // Core glow
-                0 0 3px #fff,    // Medium glow
-        }
+        // span.softGlow {
+        //     text-shadow: 0 0 5px #fff,     // Core glow
+        //         0 0 3px #fff,    // Medium glow
+        // }
 
         .heading {
-            line-height: 1.5;
+            line-height: 1.1;
             
             h1 {
                 font-size: functions.font-size("hero") - 0.5rem;
@@ -42,7 +44,6 @@ $screen-width-breakpoint: 900px;
                 font-size: functions.font-size("lg") + 0.25rem;
                 font-weight: 500;
                 max-width: 70ch;
-                margin-top: 0.5em;
 
                 span {
                     font-weight: bolder;
@@ -63,7 +64,7 @@ $screen-width-breakpoint: 900px;
 
         .heroFooter {
             position: relative;
-            top: 6em;
+            top: 5em;
             text-align: center;
             font-size: functions.font-size("base") + 0.2rem;
             margin-top: 2.25em;

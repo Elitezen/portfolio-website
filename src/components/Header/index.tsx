@@ -73,7 +73,7 @@ function Header({
                                         </li>
 
                                         <li>
-                                            <Link to="/contact" onClick={scrollToTop}>Contact</Link>
+                                            <Link to="/contact" className={styles.specialLink} onClick={scrollToTop}>Contact</Link>
                                         </li>
                                     </ul>
                                 </nav>

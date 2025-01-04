@@ -9,6 +9,7 @@ enum TabName {
 }
 
 function WorkAndAboutMe() {
+    const headerRef = useRef<HTMLElement | null>(null);
     const contentWrapperRef = useRef<HTMLElement | null>(null);
     // const [height, setHeight] = useState<number | "auto">("auto");
     const [selectedTab, setSelectedTab] = useState<TabName>(TabName.MyWork);
@@ -16,13 +17,17 @@ function WorkAndAboutMe() {
     const switchStyle = (tabName: TabName) => selectedTab === tabName ? styles.selected : undefined;
     const getSquarePosition = () => selectedTab === TabName.MyWork ? "translateX(0)" : "translateX(100%)";
 
-    // useEffect(() => {
-    //     if (contentWrapperRef.current) {
-    //       setHeight(contentWrapperRef.current.scrollHeight);
-    //     }
-    //   }, [selectedTab]);
-
     const handleButtonClick = (tabName: TabName) => {
+        if (contentWrapperRef.current) {
+            const offset = 289; // Adjust this offset as needed
+            const elementPosition = contentWrapperRef.current.getBoundingClientRect().top + window.scrollY;
+
+            window.scrollTo({
+                top: elementPosition - offset,
+                behavior: "smooth",
+            });
+        }
+
         if (tabName === selectedTab) return;
 
         setSelectedTab(tabName);
@@ -31,7 +36,7 @@ function WorkAndAboutMe() {
     return (
         <section className={styles.workAndAboutMe}>
             <div className={styles.content}>
-                <div className={styles.containerHeader}>
+                <div className={styles.containerHeader} ref={headerRef as any}>
                     <nav>
                         <ul>
                             <div

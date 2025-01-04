@@ -6,6 +6,7 @@ $screen-width-breakpoint: 950px;
 .highlightedProjects {
     .projectCards {
         @include mixins.flex(column, center, space-between);
+        gap: 5em;
     }
 }
 

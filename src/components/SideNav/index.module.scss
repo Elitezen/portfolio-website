@@ -17,7 +17,7 @@ $width: 20em;
 
     .content {
         @include mixins.flex(column, center, space-between);
-        padding: 1.5em 2.5em;
+        padding: 1em 2em;
         height: 100vh;
 
         .heading {

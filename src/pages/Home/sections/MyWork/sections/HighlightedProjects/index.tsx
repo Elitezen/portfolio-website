@@ -14,7 +14,7 @@ function HighlightedProjects() {
                 <ProjectCard 
                     imgSrc={ScriptlyStudiosCover}
                     title="Scriptly Studios"
-                    subTitle="Full-Stack Developer | Freelancer"
+                    subTitle="Web, API, and Database Developer"
                     description="I have worked on three projects for Scriptly Studios: Developed the official website, a community moderation system which helps manage +18,000 users, and a promotional voucher code system which successfully served codes to 15,000 gamers!"
                     technologies={[
                         "React", "SCSS", "NodeJS", "TypeScript", "Express API", "MongoDB", "Lua"
@@ -30,7 +30,7 @@ function HighlightedProjects() {
                 <ProjectCard 
                     imgSrc={KanaFlowCover}
                     title="KanaFlow"
-                    subTitle="Front-End Developer | App Developer"
+                    subTitle="Web + App Design and Developer"
                     description="An IOS mobile app for mastering Japanese Kana memorization for new learners. Complemented by a webpage simple yet sleek webpage."
                     technologies={[
                         "React Native", "TypeScript", "NodeJS", "React", "SCSS"
@@ -47,7 +47,7 @@ function HighlightedProjects() {
                 <ProjectCard 
                     imgSrc={ExpressiaCover}
                     title="Expressia"
-                    subTitle="Full-Stack Developer"
+                    subTitle="Web and Discord Bot Developer"
                     description="A personal passion project. A (humbly) innovative Discord bot enabling seamless browsing and importing of 25,000 assets directly within Discord, complemented by powerful utility features. Oh yeah, and I made a website for it, too."
                     technologies={[
                         "NodeJS", "TypeScript", "React", "SCSS"

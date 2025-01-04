@@ -25,7 +25,10 @@ const SideNav = forwardRef((_, ref) => {
                 <div className={styles.links}>
                     <ul>
                         <li>
-                            <Link to="/" onClick={scrollToTop}>Home</Link>
+                            <Link to="/" onClick={() => {
+                                scrollToTop();
+                                handelSideNavClose()
+                            }}>Home</Link>
                         </li>
 
                         <li>
@@ -35,7 +38,10 @@ const SideNav = forwardRef((_, ref) => {
                         </li>
 
                         <li>
-                            <Link to="/contact" onClick={scrollToTop}>Contact</Link>
+                            <Link to="/contact" onClick={() => {
+                                scrollToTop();
+                                handelSideNavClose()
+                            }}>Contact</Link>
                         </li>
                     </ul>
                 </div>
