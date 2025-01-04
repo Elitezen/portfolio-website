@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import ScriptlyStudios from "./pages/ScriptlyStudios";
 import KanaFlow from "./pages/KanaFlow";
 import Expressia from "./pages/Expressia";
+import Error from "./pages/Error";
 
 const router = createBrowserRouter([
 	{
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
 	{
 		path: "expressia",
 		element: <Expressia />
+	},
+	{
+		path: "*",
+		element: <Error />
 	}
 ]);
 
