@@ -10,6 +10,7 @@ import TypeScriptIcon from "../../assets/images/icons/typescript.svg";
 import NodeJsIcon from "../../assets/images/icons/nodejs.svg";
 import ReactIcon from "../../assets/images/icons/react.svg";
 import SCSSIcon from "../../assets/images/icons/sass.svg";
+import { Link } from "react-router-dom";
 
 const techs: Tech[] = [
     { imgSrc: ReactNativeIcon, name: "React Native" },
@@ -29,7 +30,9 @@ function KanaFlow() {
                     <img 
                         className={projectPageStyles.coverImage}
                         src={KanaFlowSite} 
-                        alt="Scriplty Studios Website" />
+                        alt="KanaFlow Website" />
+
+                    <Link to="https://kanaflowapp.com" target="_blank" className={projectPageStyles.siteLink}>Visit Live Site</Link>
                     
                     <section>
                         <h2>About My Project</h2>

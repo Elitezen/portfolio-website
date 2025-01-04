@@ -3,8 +3,8 @@ import styles from "./index.module.scss";
 import useWindowWidth from "../../(util)/useWindowWidth";
 
 // Constants for stars and screen height
-const NUM_STARS = 300;
-const PAGE_HEIGHT_VH = 100;
+const NUM_STARS = 200;
+const PAGE_HEIGHT_VH = 50;
 
 // Fall speed configuration (adjustable base speed)
 const BASE_FALL_SPEED = 0.008; // Base fall speed to scale with size

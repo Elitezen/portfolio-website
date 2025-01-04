@@ -12,6 +12,7 @@ import TypeScriptIcon from "../../assets/images/icons/typescript.svg";
 import ExpressIcon from "../../assets/images/icons/express.svg";
 import MongoDBIcon from "../../assets/images/icons/mongodb.svg";
 import LuaIcon from "../../assets/images/icons/lua.svg";
+import { Link } from "react-router-dom";
 
 const techs: Tech[] = [
     { imgSrc: ReactIcon, name: "React" },
@@ -35,6 +36,8 @@ function ScriptlyStudios() {
                         className={projectPageStyles.coverImage}
                         src={ScriptlyStudiosSite} 
                         alt="Scriplty Studios Website" />
+
+                    <Link to="https://scriptlystudios.com" target="_blank" className={projectPageStyles.siteLink}>Visit Live Site</Link>
                     
                     <section>
                         <h2>About My Work</h2>

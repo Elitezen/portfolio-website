@@ -11,7 +11,7 @@ import SideNav from "../SideNav";
 import resumePDF from "../../assets/pdf/resume_Elitezen_01-03-2025_public.pdf";
 import scrollToTop from "../../(util)/scrollToTop";
 
-const SCROLL_Y_BREAKPOINT = 50;
+const SCROLL_Y_BREAKPOINT = 30;
 const SCREEN_WIDTH_BREAKPOINT = 1_000;
 
 function Header({
