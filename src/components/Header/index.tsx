@@ -8,6 +8,8 @@ import useWindowWidth from "../../(util)/useWindowWidth";
 import menuIcon from "../../assets/images/icons/menu-icon.svg";
 import SideNav from "../SideNav";
 
+import resumePDF from "../../assets/pdf/resume_Elitezen_1-3-2025_public.pdf";
+
 const SCROLL_Y_BREAKPOINT = 50;
 const SCREEN_WIDTH_BREAKPOINT = 1_000;
 
@@ -64,7 +66,9 @@ function Header({
                                         </li>
 
                                         <li>
-                                            <Link to="#">Resume</Link>
+                                            <a href={resumePDF} target="_blank" rel="noopener noreferrer">
+                                                Resume
+                                            </a>
                                         </li>
 
                                         <li>

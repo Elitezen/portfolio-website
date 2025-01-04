@@ -53,7 +53,7 @@ function HighlightedProjects() {
                         "NodeJS", "TypeScript", "React", "SCSS"
                     ]}
                     bulletPoints={[
-                        "Surpassed 1,000 lifetime invites.",
+                        "Surpassed 1,500 lifetime invites.",
                         "Serving +85,000 users around the world.",
                         "Created a colorful and bubbly webpage to complement the app's theming"
                     ]}

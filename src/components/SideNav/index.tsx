@@ -3,6 +3,7 @@ import styles from "./index.module.scss";
 import { Link } from "react-router-dom";
 
 import XIcon from "../../assets/images/icons/x.svg";
+import resumePDF from "../../assets/pdf/resume_Elitezen_1-3-2025_public.pdf";
 
 const SideNav = forwardRef((_, ref) => {
     const handelSideNavClose = () => {
@@ -27,7 +28,9 @@ const SideNav = forwardRef((_, ref) => {
                         </li>
 
                         <li>
-                            <Link to="#">Resume</Link>
+                            <a href={resumePDF} target="_blank" rel="noopener noreferrer">
+                                Resume
+                            </a>
                         </li>
 
                         <li>
