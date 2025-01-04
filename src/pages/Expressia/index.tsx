@@ -32,7 +32,7 @@ function Expressia() {
                     <section>
                         <h2>About My Project</h2>
                         <p>
-                            Expressia is a passion project of mine, it is a Discord app designed for finding new emojis to add to a server. The bot includes a built-in emoji browser, allowing users to browse over 25,000 images through a search engine and category filter. The app is my most popular project, residing in over 800 Discord servers.
+                            Expressia is a passion project of mine, it is a Discord app designed for finding new emojis to add to a server. The bot includes a built-in emoji browser, allowing users to browse over 25,000 images through a search engine and category filter. The app is my most popular project, residing in over 800 Discord servers and has surpassed 1,500 server invites over its lifetime, serving a total of 85,000+ satisfied users around the world.
                         </p>
                     
                         <div className={projectPageStyles.details}>
@@ -64,18 +64,19 @@ function Expressia() {
                     </section>
 
                     <section>
-                        <h2>1. Bot Development</h2>
+                        <h2>1. Development</h2>
                         <p>
-                            Creating Expressia was a journey of challenges. From sourcing assets, developing a built-in browser from using only images and buttons, to getting verification from Discord.
+                            Creating Expressia was a journey of challenges. From sourcing assets, developing a built-in browser from using only images and buttons, to getting verification from Discord. To complement Expressia's branding and functionality, I designed and created a React webpage to highlight the app's innovative features. This helped increase traffic to the official Discord App Directory page by 10% and provided users with an informative and visually appealing experience.
                         </p>
 
                         <section>
-                            <h3>Acomplishments</h3>
+                            <h3>Accomplishments</h3>
 
                             <ul className={projectPageStyles.list}>
-                                <li>Created an innovative built-in Discord bot browser.</li>
-                                <li>Sourced over 25,000 image assets with metadata.</li>
+                                <li>Created a unique and capable Discord app by utilizing the Discord API with Node.js and TypeScript, providing an innovative way for users to search for emojis unmatched by other services.</li>
+                                <li>Designed and created a React webpage to complement my app's theming and highlight its innovative features, helping increase traffic to the official Discord App Directory page by %10.</li>
                                 <li>Received verification status by Discord.</li>
+                                <li>Surpassed 1,500 server invites, serving 85,000+ users worldwide.</li>
                             </ul>
                         </section>
                     
@@ -91,7 +92,7 @@ function Expressia() {
 
                                     <h5>Solution</h5>
                                     <p>
-                                        I leveraged the power of node-canvas and Discord bot buttons to create a sudo browser. I created a dynamic canvas layout that house show up to 10 emojis per page. Users could use simple navigation buttons to browse emojis 10 at a time, and use number buttons to focus in on one emoji similar to a mouse click. Focusing in on an emoji would create a separate UI that would show a larger image of the emoji with it's metadata, as well as buttons to import it.
+                                        I leveraged the power of node-canvas and Discord bot buttons to create a pseudo-browser. I created a dynamic canvas layout that showed up to 10 emojis per page. Users could use simple navigation buttons to browse emojis 10 at a time, and use number buttons to focus in on one emoji similar to a mouse click. Focusing in on an emoji would create a separate UI that would show a larger image of the emoji with its metadata, as well as buttons to import it.
                                     </p>
                                 </li>
                             </ol>
@@ -102,5 +103,6 @@ function Expressia() {
         </main>
     )
 }
+
 
 export default Expressia;

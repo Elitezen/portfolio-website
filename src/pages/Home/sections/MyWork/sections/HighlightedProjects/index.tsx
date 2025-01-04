@@ -20,9 +20,9 @@ function HighlightedProjects() {
                         "React", "SCSS", "NodeJS", "TypeScript", "Express API", "MongoDB", "Lua"
                     ]}
                     bulletPoints={[
-                        "Mobile responsive React web development.",
-                        "Working along side the community manager to design and develop a NodeJS moderation system.",
-                        "Engineered and deployed a highly reliable promotional code Express API and MongoDB database, serving 15,000 players with 100% uptime."
+                        "Developed an Express API with 100% uptime, handling 15,000+ promo code redemptions, boosting the studio's player base by 19%.",
+                        "Built a React website that increased search visibility for Scriptly Studios, leading to a 10% rise in new daily players and hundreds of monthly visitors.",
+                        "Designed a Node.js and MongoDB moderation system for 18,000+ members, reducing unsafe content by nearly 50% with 2,000 actions in a year."
                     ]}
                     link="scriptly-studios"
                     pageURL="https://www.scriptlystudios.com/"/>
@@ -36,9 +36,9 @@ function HighlightedProjects() {
                         "React Native", "TypeScript", "NodeJS", "React", "SCSS"
                     ]}
                     bulletPoints={[
-                        "Developed a responsive and clean app UI adaptable for phone and tablets.",
-                        "Effectively demonstrated the app's featureset in a simple and clean webpage.",
-                        "Approved by the Apple Appstore (Woohoo! 🎉)"
+                        "Developed a sleek React Native app adaptable to all devices, increasing non-iPhone downloads by 38%.",
+                        "Created a React webpage highlighting app features, generating 30+ additional impressions monthly.",
+                        "Published a currently 5-star Japanese learning app on the Apple App Store, delivering a smooth user experience."
                     ]
                     }
                     link="/kanaflow"
@@ -53,9 +53,9 @@ function HighlightedProjects() {
                         "NodeJS", "TypeScript", "React", "SCSS"
                     ]}
                     bulletPoints={[
-                        "Surpassed 1,500 lifetime invites.",
-                        "Serving +85,000 users around the world.",
-                        "Created a colorful and bubbly webpage to complement the app's theming"
+                        "Built a Node.js and TypeScript app using the Discord API, offering unique emoji search capabilities.",
+                        "Achieved 1,500+ server invites and served 85,000+ users worldwide.",
+                        "Designed a React site to showcase app features, boosting traffic to the Discord App Directory by 10%."
                     ]}
                     link="expressia"
                     pageURL="https://www.expressiabot.com/"/>

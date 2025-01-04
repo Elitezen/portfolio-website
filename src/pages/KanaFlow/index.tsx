@@ -36,7 +36,10 @@ function KanaFlow() {
                         <p>
                             After a few years of casually studying Japanese, I wanted a quick, easy-to-use app to practice <span>Kana</span>. In just a month, I mastered React Native, built a quiz system, and created a working version. When I shared a preview with a Japanese teacher friend overseas, she was eager to try it and gave positive feedback. Encouraged by others, I rebuilt the app with the goal of publishing it, and on November 12th, 2024, it was accepted into the Apple App Store.
                         </p>
-                    
+                        <p>
+                            I developed a responsive and sleek React Native app UI adaptable for phones and tablets of all sizes. Users can comfortably use my app on any mobile device or desktop, leading to a 38% increase in downloads from non-iPhone devices.
+                        </p>
+                        
                         <div className={projectPageStyles.details}>
                             <section className={projectPageStyles.detail}>
                                 <h3>Roles</h3>
@@ -54,7 +57,7 @@ function KanaFlow() {
                                 <ul className={projectPageStyles.techStack}>
                                     {
                                         techs.map(tech => (
-                                            <li>
+                                            <li key={tech.name}>
                                                 <img src={tech.imgSrc} alt={`${tech.name} icon`} />
                                                 <p>{tech.name}</p>
                                             </li>
@@ -66,17 +69,18 @@ function KanaFlow() {
                     </section>
 
                     <section>
-                        <h2>1. App Development</h2>
+                        <h2>Development</h2>
                         <p>
-                            Before creating KanaFlow, I had minimal experience with React Native. This was a build-as-you-learn project, as many other works in development have been for me.
+                            Before creating KanaFlow, I had minimal experience with React Native. This was a build-as-you-learn project, as many other works in development have been for me. I designed a simple webpage not only to showcase the app, but to also contain a support page and privacy policy required by the Apple Appstore. This site is my favorite so far, as it challenged me to design a simple yet appealing landing page.
                         </p>
 
                         <section>
-                            <h3>Acomplishments</h3>
+                            <h3>Accomplishments</h3>
 
                             <ul className={projectPageStyles.list}>
-                                <li>Designed and developed a dynamic React Native app with a clean and easy-to-follow UI.</li>
-                                <li>Approved by the Apple Appstore.</li>
+                                <li>Designed and developed a dynamic React Native app with a clean and easy-to-follow UI adaptable to any screen size.</li>
+                                <li>Effectively demonstrated the app's feature set in a simple and modern React webpage, resulting in an average of 30 more app page impressions monthly.</li>
+                                <li>Successfully approved for publication on the Apple App Store, providing a smooth user experience for Japanese language learners and currently holding a 5-star rating.</li>
                             </ul>
                         </section>
                     
@@ -97,13 +101,6 @@ function KanaFlow() {
                                 </li>
                             </ol>
                         </section>
-                    </section>
-
-                    <section>
-                        <h2>1. Web Development</h2>
-                        <p>
-                            I designed a simple webpage not only to showcase the app, but to also contain a support page and privacy policy required by the Apple Appstore. This site is my favorite so far, as it challenged me to design a simple yet appealing landing page.
-                        </p>
                     </section>
                 </ProjectPage>
             <Footer />

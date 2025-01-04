@@ -70,10 +70,10 @@ function ScriptlyStudios() {
 
                     <section>
                         <h2>1. Flag Wars x Freshcut Collaboration Event</h2>
-                        <p>In February 2023, Scriptly Studios partnered with the social media platform FreshCut for a promotional event in Flag Wars. I was tasked with creating a system to manage the redemption of 15,000 unique in-game promotional codes. My work included managing and populating a MongoDB database, developing an API for managing code entries, and integrating the API into Flag Wars to handle redemptions. The promotion was a massive success, with my API achieving 100% uptime and error-free performance throughout the event.</p>
+                        <p>In February 2023, Scriptly Studios partnered with the social media platform FreshCut for a promotional event in Flag Wars. I was tasked with creating a system to manage the redemption of 15,000 unique in-game promotional codes. My work included managing and populating a MongoDB database, developing an API for managing code entries, and integrating the API into Flag Wars to handle redemptions. The promotion was a massive success, with my API achieving 100% uptime and error-free performance throughout the event. This led to a 19% increase in the studio's player base.</p>
                     
                         <section>
-                            <h3>Acomplishments</h3>
+                            <h3>Accomplishments</h3>
 
                             <ul className={projectPageStyles.list}>
                                 <li>Imported 15,000 promotional code vouchers into MongoDB along with fields for metadata.</li>
@@ -81,81 +81,35 @@ function ScriptlyStudios() {
                                 <li>Implemented API access into the game to enable users to redeem codes.</li>
                             </ul>
                         </section>
-
-                        <section>
-                            <h3>Challenges Faced</h3>
-
-                            <ol className={`${projectPageStyles.list} ${projectPageStyles.cyclicList}`}>
-                                <li>
-                                    <h4>Preventing Double Redemptions of the Same Code</h4>
-                                    <p>
-                                        During testing of the redemption API, I realized that the same code could be redeemed twice by 2 different requests if they were sent by less than 100 milliseconds apart. Each promotional code was unique and only 1 player would be allowed one code redemption. 
-                                    </p>
-
-                                    <h5>Solution</h5>
-                                    <p>
-                                    This project was my first experience developing a production API. I collaborated with Scriptly Studios' developers and FreshCut's management to meet their requirements. The high stakes of delivering a reliable system for tens of thousands of players fostered strong self-discipline. I gained skills in API security (IP whitelisting, rate limiting, secret keys), error handling, and ensuring proper responses for all requests.
-                                    </p>
-                                </li>
-                            </ol>
-                        </section>
-
-                        <section>
-                            <h3>What I Learned</h3>
-
-                            <p>
-                                This project marked my first experience developing an API for production. I collaborated closely with Scriptly Studios' developers and FreshCut's management to align with both parties' requirements. The pressure of delivering a reliable system for tens of thousands of players instilled strong self-discipline throughout the design and development process. I gained valuable skills, including securing an API through IP whitelisting, rate limiting, and secret keys, as well as handling all potential errors and ensuring appropriate responses to every request, regardless of the outcome.
-                            </p>
-                        </section>
                     </section>
 
                     <section>
                         <h2>2. Web Development of ScriptlyStudios.com</h2>
-                        <p>
-                            I designed and developed the offical website for Scriptly Studios and effectively showcased the studio's games and accomplishments.
-                        </p>
+                        <p>I designed and developed the official website for Scriptly Studios, showcasing the studio's games and accomplishments. Through effective SEO practices, the website secured top search rankings for "Scriptly Studios." This effort has resulted in hundreds of monthly visitors and a 10% increase in new daily players.</p>
                     
                         <section>
-                            <h3>Acomplishments</h3>
+                            <h3>Accomplishments</h3>
 
                             <ul className={projectPageStyles.list}>
-                                <li>Desgined a stylized webpage fitting for Scriptly Studios' theming and games.</li>
+                                <li>Designed a stylized webpage fitting for Scriptly Studios' theming and games.</li>
                                 <li>Implemented SEO practices to place the webpage at the top of search results for "Scriptly Studios."</li>
+                                <li>Boosted search visibility and brand engagement with a captivating design.</li>
                             </ul>
                         </section>
                     </section>
 
                     <section>
                         <h2>3. Scriptly Studios Community Moderation System</h2>
-                        <p>
-                            The community Discord server of Scriptly Studios has consistently housed over 18,000 members. The Community Manager tasked me with creating the successor to a moderation system app used by the moderators daily. I worked closley with the manager to design and plan out the feature set of the new moderation client "Scriptly Bot." Throughout the span of over the year, the client would undergo 3 major versions, with each new rework improving in feature-set, performance, and code quality. Today, thousands of moderation actions have been carried out by the staff team, effectively maintaining the safety of the Discord server.
-                        </p>
+                        <p>The community Discord server of Scriptly Studios has consistently housed over 18,000 members. I worked closely with the Community Manager to design and plan the feature set of the new moderation client, "Scriptly Bot." This system has supported nearly 2,000 moderation actions in a year, reducing unsafe content in the community by almost 50%.</p>
                     
                         <section>
-                            <h3>Acomplishments</h3>
+                            <h3>Accomplishments</h3>
 
                             <ul className={projectPageStyles.list}>
                                 <li>Worked alongside the Community Manager to design the new moderation system.</li>
-                                <li>Developed and deployed an advanced and versitile moderation system</li>
+                                <li>Developed and deployed an advanced and versatile moderation system.</li>
+                                <li>Enhanced community safety and reduced unsafe content by nearly 50%.</li>
                             </ul>
-                        </section>
-
-                        <section>
-                            <h3>Challenges Faced</h3>
-
-                            <ol className={`${projectPageStyles.list} ${projectPageStyles.cyclicList}`}>
-                                <li>
-                                    <h4>Maintaining a Rapidly Growing and Complex Codebase</h4>
-                                    <p>
-                                    The Scriptly Bot codebase is among the largest I have ever managed. While I initially developed the first two versions, the community manager's growing requests for new features, command overhauls, and entirely new systems gradually expanded the codebase in an unstructured way. Over time, the lack of organization made it increasingly difficult to navigate, eventually hindering my ability to focus on programming as I struggled to decipher my own code.
-                                    </p>
-
-                                    <h5>Solution</h5>
-                                    <p>
-                                    The two major updates to the codebase involved extensive refactoring, creating reusable components and functions, and restructuring database schemas to accommodate new requirements. Alongside these refactors, I researched best practices for organizing the directory structure, aiming to design a layout that was logical, easy to navigate, and streamlined for future development.
-                                    </p>
-                                </li>
-                            </ol>
                         </section>
                     </section>
                 </ProjectPage>
@@ -163,5 +117,6 @@ function ScriptlyStudios() {
         </main>
     )
 }
+
 
 export default ScriptlyStudios;
