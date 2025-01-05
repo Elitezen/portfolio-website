@@ -12,8 +12,6 @@ function ProjectPage({
 }: ProjectPageOptions) {
     return (
         <div className={styles.projectPage}>
-            <ReturnLink type="top"/>
-
             <div className={styles.content}>
                 { 
                     ...children

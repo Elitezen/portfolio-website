@@ -15,7 +15,7 @@ function WorkAndAboutMe() {
     const [selectedTab, setSelectedTab] = useState<TabName>(TabName.MyWork);
 
     const switchStyle = (tabName: TabName) => selectedTab === tabName ? styles.selected : undefined;
-    const getSquarePosition = () => selectedTab === TabName.MyWork ? "translateX(0)" : "translateX(100%)";
+    const getSquarePosition = () => selectedTab === TabName.MyWork ? "translateX(0)" : "translateX(101%)";
 
     const handleButtonClick = (tabName: TabName) => {
         if (contentWrapperRef.current) {

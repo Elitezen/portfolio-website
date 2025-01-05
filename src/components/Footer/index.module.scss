@@ -40,6 +40,13 @@ footer {
             font-weight: 500;
             font-size: functions.font-size("base") + 0.1rem;
             white-space: nowrap;
+
+            transition: background-color 0.2s ease-in-out;
+
+            &:hover {
+                background-color: #FFF;
+                color: #000;
+            }
         }
     }
 }
