@@ -8,7 +8,7 @@ import useWindowWidth from "../../(util)/useWindowWidth";
 import menuIcon from "../../assets/images/icons/menu-icon.svg";
 import SideNav from "../SideNav";
 
-import resumePDF from "../../assets/pdf/resume_Elitezen_01-03-2025_public.pdf";
+import resumePDF from "../../assets/pdf/resume_Elitezen_01-05-2025_public.pdf";
 import scrollToTop from "../../(util)/scrollToTop";
 
 const SCROLL_Y_BREAKPOINT = 30;
